@@ -1,3 +1,8 @@
+# VRChat SDK、UdonSharpに由来し、ライセンスが複雑になるため除外
+/Assets/SerializedUdonPrograms/*.asset*
+
+
+
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
