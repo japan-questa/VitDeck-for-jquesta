@@ -74,6 +74,13 @@ namespace VitDeck.Validator
                 new ContainMatOrTexInAssetRule(LocalizedMessage.Get("VketRuleSetBase.ContainMatOrTexInAssetRule.Title")),
 
                 new EmbeddedMaterialsRule("モデルのMaterials設定で「Use Embedded Materials」を使う"),
+
+                ////////////////////////////////////////////////////////////////
+                ////                        入稿データ                      ////
+                ////////////////////////////////////////////////////////////////
+                
+                // ビルドサイズの確認をAndroidプラットフォームで行う
+                new UnityPlatformRule("Unityプラットフォーム", UnityPlatformRule.Platform.Android),
                 
                 ////////////////////////////////////////////////////////////////
                 ////                         シーン                         ////
