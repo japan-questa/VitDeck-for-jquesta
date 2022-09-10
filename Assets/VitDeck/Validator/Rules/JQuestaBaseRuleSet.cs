@@ -25,6 +25,8 @@ namespace VitDeck.Validator
 
         protected abstract string ExportSettingName { get; }
 
+        protected abstract Vector3 BoothSizeLimit { get; }
+
         public JQuestaBaseRuleSet() : base()
         {
             officialPrefabsDetector = new PrefabPartsDetector(
@@ -42,6 +44,14 @@ namespace VitDeck.Validator
             // 継承したプロパティを参照して挙動を変えることが出来ない為、直接リストを返す方式に変更した。
             return new IRule[]
             {
+                ////////////////////////////////////////////////////////////////
+                ////          アバター出展・イベント出展　共通事項          ////
+                ////////////////////////////////////////////////////////////////
+                
+                new UnityVersionRule(LocalizedMessage.Get("VketRuleSetBase.UnityVersionRule.Title", "2019.4.31f1"), "2019.4.31f1"),
+
+                new FolderSizeRule(LocalizedMessage.Get("VketRuleSetBase.FolderSizeRule.Title"), 50 * (int)Math.Pow(2, 20)),
+
                 new BaseFolderPathRule(
                     "ベースフォルダパスルール",
                     new Regex("^Assets/[0-9]{3}$"),
@@ -54,38 +64,46 @@ namespace VitDeck.Validator
                     Exporter.Exporter.GetExportSettings().First(setting => setting.name == ExportSettingName)
                 ),
 
-                new EmbeddedMaterialsRule("モデルのMaterials設定で「Use Embedded Materials」を使う"),
-
-                new UnityVersionRule(LocalizedMessage.Get("VketRuleSetBase.UnityVersionRule.Title", "2019.4.31f1"), "2019.4.31f1"),
-
                 new ExistInSubmitFolderRule(LocalizedMessage.Get("VketRuleSetBase.ExistInSubmitFolderRule.Title"), VRCUdonSampleOfficialAssetData.GUIDs, targetFinder),
 
                 new AssetGuidBlacklistRule(LocalizedMessage.Get("VketRuleSetBase.OfficialAssetDontContainRule.Title"), VRCUdonSampleOfficialAssetData.GUIDs),
 
                 new ContainMatOrTexInAssetRule(LocalizedMessage.Get("VketRuleSetBase.ContainMatOrTexInAssetRule.Title")),
 
-                new FolderSizeRule(LocalizedMessage.Get("VketRuleSetBase.FolderSizeRule.Title"), 50 * (int)Math.Pow(2, 20)),
-
-                new ExhibitStructureRule(LocalizedMessage.Get("VketRuleSetBase.ExhibitStructureRule.Title")),
-
-                new StaticFlagRule(LocalizedMessage.Get("VketRuleSetBase.StaticFlagsRule.Title")),
+                new EmbeddedMaterialsRule("モデルのMaterials設定で「Use Embedded Materials」を使う"),
+                
+                ////////////////////////////////////////////////////////////////
+                ////                         シーン                         ////
+                ////////////////////////////////////////////////////////////////
 
                 new BoothBoundsRule(LocalizedMessage.Get("VketRuleSetBase.BoothBoundsRule.Title"),
                     size: BoothSizeLimit,
                     margin: 0.01f,
                     Vector3.zero,
                     VRCUdonSampleOfficialAssetData.SizeIgnorePrefabGUIDs),
+                
+                ////////////////////////////////////////////////////////////////
+                ////                     コンポーネント                     ////
+                ////////////////////////////////////////////////////////////////
 
+                // コンポーネントのホワイトリスト制限
                 new UsableComponentListRule(LocalizedMessage.Get("VketRuleSetBase.UsableComponentListRule.Title"),
                     GetComponentReferences(),
                     ignorePrefabGUIDs: VRCUdonSampleOfficialAssetData.GUIDs,
                     unregisteredComponent: ValidationLevel.DISALLOW),
+                
+                
+                ////////////////////////////////////////////////////////////////
+                ////                 GameObjectのStatic設定                 ////
+                ////////////////////////////////////////////////////////////////
+
+                new ExhibitStructureRule(LocalizedMessage.Get("VketRuleSetBase.ExhibitStructureRule.Title")),
+
+                new StaticFlagRule(LocalizedMessage.Get("VketRuleSetBase.StaticFlagsRule.Title")),
 
                 new MeshRendererRule(LocalizedMessage.Get("VketRuleSetBase.MeshRendererRule.Title")),
             };
         }
-
-        protected abstract Vector3 BoothSizeLimit { get; }
 
         protected virtual IEnumerable<ComponentReference> GetComponentReferences()
         {

@@ -14,12 +14,22 @@ namespace VitDeck.Validator
 
         protected override string ExportSettingName => "じゃぱんくえすた アバター出展";
 
+        protected override Vector3 BoothSizeLimit => new Vector3(3, 3, 3);
+
         public new IRule[] GetRules()
         {
             return base.GetRules().Concat(new IRule[]
             {
+                ////////////////////////////////////////////////////////////////
+                ////                      コンポーネント                    ////
+                ////////////////////////////////////////////////////////////////
+                
                 new ComponentMaxCountRule("メッシュ数制限", typeof(MeshFilter), 2),
                 new ComponentMaxCountRule("メッシュ数制限", typeof(MeshRenderer), 2),
+
+                ////////////////////////////////////////////////////////////////
+                ////                    使用可能シェーダー                  ////
+                ////////////////////////////////////////////////////////////////
 
                 new ShaderWhitelistRule("シェーダーホワイトリストルール", new Dictionary<string, string>()
                 {
@@ -30,7 +40,5 @@ namespace VitDeck.Validator
                 }, "入稿規定の使用可能シェーダーをご参照ください。", "https://jquesta.jp/exhibit-avatar.html"),
             }).ToArray();
         }
-
-        protected override Vector3 BoothSizeLimit => new Vector3(3, 3, 3);
     }
 }

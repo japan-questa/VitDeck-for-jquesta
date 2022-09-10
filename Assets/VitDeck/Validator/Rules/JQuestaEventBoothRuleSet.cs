@@ -19,10 +19,82 @@ namespace VitDeck.Validator
 
         protected override string ExportSettingName => "じゃぱんくえすた イベント出展 (ブース)";
 
+        protected override Vector3 BoothSizeLimit => new Vector3(4, 5, 4);
+
         public new IRule[] GetRules()
         {
             return base.GetRules().Concat(new IRule[]
             {
+                ////////////////////////////////////////////////////////////////
+                ////                        入稿データ                      ////
+                ////////////////////////////////////////////////////////////////
+                
+                new LightmapSizeLimitRule(
+                    LocalizedMessage.Get("VketRuleSetBase.LightMapsLimitRule.Title", 1, 256),
+                    lightmapCountLimit: 1,
+                    lightmapResolutionLimit: 256),
+
+                ////////////////////////////////////////////////////////////////
+                ////                      コンポーネント                    ////
+                ////////////////////////////////////////////////////////////////
+                
+                // VRC Pickup
+                new PrefabLimitRule(
+                    LocalizedMessage.Get("VketRuleSetBase.PickupObjectSyncPrefabLimitRule.Title", 5),
+                    VRCUdonSampleOfficialAssetData.PickupObjectSyncPrefabGUIDs,
+                    limit: 5),
+
+                // Animator
+                new AnimatorComponentMaxCountRule(LocalizedMessage.Get("VketRuleSetBase.AnimatorComponentMaxCountRule.Title"), limit: 20),
+                new AnimatorComponentRule(
+                    LocalizedMessage.Get("VketRuleSetBase.AnimatorComponentRule.Title"),
+                    new[] { typeof(VRC_Pickup) },
+                    officialPrefabsDetector),
+
+                // Light
+                new LightConfigRule(
+                    LocalizedMessage.Get("VketRuleSetBase.PointLightConfigRule.Title"),
+                    LightType.Point,
+                    new LightConfigRule.LightConfig(new[] { LightmapBakeType.Baked })),
+
+                new LightConfigRule(LocalizedMessage.Get("VketRuleSetBase.SpotLightConfigRule.Title"),
+                    LightType.Spot,
+                    new LightConfigRule.LightConfig(new[] { LightmapBakeType.Baked })),
+
+                new LightConfigRule(
+                    LocalizedMessage.Get("VketRuleSetBase.AreaLightConfigRule.Title"),
+                    LightType.Area,
+                    new LightConfigRule.LightConfig(new[] { LightmapBakeType.Baked })),
+
+                // Canvas
+                new CanvasRenderModeRule(LocalizedMessage.Get("VketRuleSetBase.CanvasRenderModeRule.Title")),
+
+                // RigidBodyはisKinematicへチェックを入れる
+                new RigidbodyRule(LocalizedMessage.Get("VketRuleSetBase.RigidbodyRule.Title")),
+
+                // Reflection Probe
+                new ComponentMaxCountRule("ReflectionProbe数制限", typeof(ReflectionProbe), 1),
+                new ReflectionProbeRule(
+                    LocalizedMessage.Get("VketRuleSetBase.ReflectionProbeRule.Title"),
+                    new[]{ ReflectionProbeMode.Custom, ReflectionProbeMode.Baked }),
+
+                // Audio Source
+                new ComponentMaxCountRule("AudioSource数制限", typeof(AudioSource), 1),
+
+                // Udon Behaviour
+                // 全てのUdonBehaviourオブジェクトの親であるDynamicオブジェクトは初期でInactive状態にしてください
+                new UdonDynamicObjectInactiveRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonDynamicObjectInactiveRule.Title")), 
+                // UdonBehaviourを含むオブジェクトのLayerはUserLayer23としてください
+                new UdonBehaviourLayerConstraintRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonBehaviourLayerConstraintRule.Title")),
+                // AllowOwnershipTransferOnCollisionは必ずFalseにすること
+                new UdonBehaviourAllowOwnershipTransferOnCollisionIsFalseRule(LocalizedMessage.Get("UdonBehaviourAllowOwnershipTransferOnCollisionIsFalseRule.Title")),
+                // VRCPickup は UdonBehaviour [AutoResetPickup] を持つ必要があります。
+                new VRCPickupUdonBehaviourRule(LocalizedMessage.Get("VketUdonRuleSetBase.X08_VRCPickupUdonBehaviourRule.Title")),
+
+                ////////////////////////////////////////////////////////////////
+                ////                    使用可能シェーダー                  ////
+                ////////////////////////////////////////////////////////////////
+                
                 new ShaderWhitelistRule("シェーダーホワイトリストルール", new Dictionary<string, string>()
                 {
                     // VRChat SDK (VRCSDK3-Worlds)
@@ -76,67 +148,15 @@ namespace VitDeck.Validator
                     { "VRM/UnlitTransparentZWrite", "429a3203ab2959741aab76fa2856b450" },
                 }, "入稿規定の使用可能シェーダーをご参照ください。", "https://jquesta.jp/exhibit-event.html"),
 
-                new LightmapSizeLimitRule(
-                    LocalizedMessage.Get("VketRuleSetBase.LightMapsLimitRule.Title", 1, 256),
-                    lightmapCountLimit: 1,
-                    lightmapResolutionLimit: 256),
+                ////////////////////////////////////////////////////////////////
+                ////                 GameObjectのStatic設定                 ////
+                ////////////////////////////////////////////////////////////////
 
-                new ReflectionProbeRule(
-                    LocalizedMessage.Get("VketRuleSetBase.ReflectionProbeRule.Title"),
-                    new[]{ ReflectionProbeMode.Custom, ReflectionProbeMode.Baked }),
-
-                new LightConfigRule(
-                    LocalizedMessage.Get("VketRuleSetBase.PointLightConfigRule.Title"),
-                    LightType.Point,
-                    new LightConfigRule.LightConfig(new[] { LightmapBakeType.Baked })),
-
-                new LightConfigRule(LocalizedMessage.Get("VketRuleSetBase.SpotLightConfigRule.Title"),
-                    LightType.Spot,
-                    new LightConfigRule.LightConfig(new[] { LightmapBakeType.Baked })),
-
-                new LightConfigRule(
-                    LocalizedMessage.Get("VketRuleSetBase.AreaLightConfigRule.Title"),
-                    LightType.Area,
-                    new LightConfigRule.LightConfig(new[] { LightmapBakeType.Baked })),
-
-                new AnimatorComponentRule(
-                    LocalizedMessage.Get("VketRuleSetBase.AnimatorComponentRule.Title"),
-                    new[] { typeof(VRC_Pickup) },
-                    officialPrefabsDetector),
-
-                new CanvasRenderModeRule(LocalizedMessage.Get("VketRuleSetBase.CanvasRenderModeRule.Title")),
-
-                new PrefabLimitRule(
-                    LocalizedMessage.Get("VketRuleSetBase.PickupObjectSyncPrefabLimitRule.Title", 5),
-                    VRCUdonSampleOfficialAssetData.PickupObjectSyncPrefabGUIDs,
-                    limit: 5),
-
-                new AnimatorComponentMaxCountRule(LocalizedMessage.Get("VketRuleSetBase.AnimatorComponentMaxCountRule.Title"), limit: 20),
-                new ComponentMaxCountRule("ReflectionProbe数制限", typeof(ReflectionProbe), 1),
-                new ComponentMaxCountRule("AudioSource数制限", typeof(AudioSource), 1),
-
-                // RigidBodyはisKinematicへチェックを入れる
-                new RigidbodyRule(LocalizedMessage.Get("VketRuleSetBase.RigidbodyRule.Title")),
-
-                // Udon Behaviour
                 // UdonBehaviourを含むオブジェクト、UdonBehaviourによって操作を行うオブジェクトは全て入稿ルール C.Scene内階層規定におけるDynamicオブジェクトの階層下に入れてください
-                new UdonDynamicObjectParentRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonDynamicObjectParentRule.Title")), 
-                
-                // 全てのUdonBehaviourオブジェクトの親であるDynamicオブジェクトは初期でInactive状態にしてください
-                new UdonDynamicObjectInactiveRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonDynamicObjectInactiveRule.Title")), 
-
-                // UdonBehaviourを含むオブジェクトのLayerはUserLayer23としてください
-                new UdonBehaviourLayerConstraintRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonBehaviourLayerConstraintRule.Title")),
-
-                // AllowOwnershipTransferOnCollisionは必ずFalseにすること
-                new UdonBehaviourAllowOwnershipTransferOnCollisionIsFalseRule(LocalizedMessage.Get("UdonBehaviourAllowOwnershipTransferOnCollisionIsFalseRule.Title")),
-
-                // VRCPickup は UdonBehaviour [AutoResetPickup] を持つ必要があります。
-                new VRCPickupUdonBehaviourRule(LocalizedMessage.Get("VketUdonRuleSetBase.X08_VRCPickupUdonBehaviourRule.Title")),
+                new UdonDynamicObjectParentRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonDynamicObjectParentRule.Title")),
             }).ToArray();
-        }
 
-        protected override Vector3 BoothSizeLimit => new Vector3(4, 5, 4);
+        }
 
         protected override IEnumerable<ComponentReference> GetComponentReferences()
         {
