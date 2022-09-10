@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using VitDeck.Language;
 
@@ -21,6 +23,8 @@ namespace VitDeck.Validator
 
         protected readonly IObjectDetector officialPrefabsDetector;
 
+        protected abstract string ExportSettingName { get; }
+
         public JQuestaBaseRuleSet() : base()
         {
             officialPrefabsDetector = new PrefabPartsDetector(
@@ -38,6 +42,19 @@ namespace VitDeck.Validator
             // 継承したプロパティを参照して挙動を変えることが出来ない為、直接リストを返す方式に変更した。
             return new IRule[]
             {
+                new BaseFolderPathRule(
+                    "ベースフォルダパスルール",
+                    new Regex("^Assets/[0-9]{3}$"),
+                    "Base Folderは、入稿ツールによってAssets直下へ作成された、半角数字3桁の出展IDのフォルダです。"
+                ),
+
+                // 拡張子のホワイトリスト
+                new AllowedExtensionsForExportRule(
+                    LocalizedMessage.Get("AllowedExtensionsForExportRule.Title"),
+                    Exporter.Exporter.GetExportSettings().First(setting => setting.name == ExportSettingName)
+                ),
+
+                new EmbeddedMaterialsRule("モデルのMaterials設定で「Use Embedded Materials」を使う"),
 
                 new UnityVersionRule(LocalizedMessage.Get("VketRuleSetBase.UnityVersionRule.Title", "2019.4.31f1"), "2019.4.31f1"),
 
