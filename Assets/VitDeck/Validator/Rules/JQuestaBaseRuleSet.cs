@@ -1,6 +1,7 @@
 #if VRC_SDK_VRCSDK3
 using System;
 using UnityEngine;
+using UnityEngine.Rendering;
 using VitDeck.Language;
 using VRC.SDKBase;
 
@@ -72,7 +73,9 @@ namespace VitDeck.Validator
 
                 new MeshRendererRule(LocalizedMessage.Get("VketRuleSetBase.MeshRendererRule.Title")),
 
-                new ReflectionProbeRule(LocalizedMessage.Get("VketRuleSetBase.ReflectionProbeRule.Title")),
+                new ReflectionProbeRule(
+                    LocalizedMessage.Get("VketRuleSetBase.ReflectionProbeRule.Title"),
+                    new[]{ ReflectionProbeMode.Custom, ReflectionProbeMode.Baked }),
 
                 new LightConfigRule(
                     LocalizedMessage.Get("VketRuleSetBase.PointLightConfigRule.Title"),
