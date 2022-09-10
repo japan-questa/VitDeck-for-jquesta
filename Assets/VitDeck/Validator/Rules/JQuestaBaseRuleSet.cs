@@ -58,6 +58,9 @@ namespace VitDeck.Validator
                     "Base Folderは、入稿ツールによってAssets直下へ作成された、半角数字3桁の出展IDのフォルダです。"
                 ),
 
+                // VitDeckは常に最新バージョンを使うように
+                new VitDeckVersionRule("VitDeckバージョンルール"),
+
                 // 拡張子のホワイトリスト
                 new AllowedExtensionsForExportRule(
                     LocalizedMessage.Get("AllowedExtensionsForExportRule.Title"),
