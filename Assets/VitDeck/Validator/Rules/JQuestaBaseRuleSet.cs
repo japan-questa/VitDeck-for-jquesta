@@ -64,7 +64,7 @@ namespace VitDeck.Validator
                 // 拡張子のホワイトリスト
                 new AllowedExtensionsForExportRule(
                     LocalizedMessage.Get("AllowedExtensionsForExportRule.Title"),
-                    Exporter.Exporter.GetExportSettings().First(setting => setting.name == ExportSettingName)
+                    Exporter.Exporter.GetExportSettings().First(setting => setting.SettingName == ExportSettingName)
                 ),
 
                 new ExistInSubmitFolderRule(LocalizedMessage.Get("VketRuleSetBase.ExistInSubmitFolderRule.Title"), JQuestaAssetData.GUIDs, targetFinder),
