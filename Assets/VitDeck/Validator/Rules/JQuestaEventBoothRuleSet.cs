@@ -90,6 +90,9 @@ namespace VitDeck.Validator
                 // Audio Source
                 new ComponentMaxCountRule("AudioSource数制限", typeof(AudioSource), 1),
 
+                // すべてのParticle Systemコンポーネントの Max Particles の合計値が100以内
+                new AllMaxParticlesMaxCountRule("Particle System", 100),
+
                 // Udon Behaviour
                 // 全てのUdonBehaviourオブジェクトの親であるDynamicオブジェクトは初期でInactive状態にしてください
                 new UdonDynamicObjectInactiveRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonDynamicObjectInactiveRule.Title")), 
