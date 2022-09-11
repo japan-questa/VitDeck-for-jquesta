@@ -26,6 +26,7 @@ namespace VitDeck.Validator
                 
                 new ComponentMaxCountRule("メッシュ数制限", typeof(MeshFilter), 2),
                 new ComponentMaxCountRule("メッシュ数制限", typeof(MeshRenderer), 2),
+                new AllMaterialSlotMaxCountRule("合計マテリアルスロット数制限", 2),
 
                 ////////////////////////////////////////////////////////////////
                 ////                    使用可能シェーダー                  ////
