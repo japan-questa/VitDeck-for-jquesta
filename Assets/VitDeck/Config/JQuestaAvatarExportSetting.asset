@@ -27,8 +27,6 @@ MonoBehaviour:
 
     .bmp
 
-    .cginc
-
     .controller
 
     .exr
@@ -46,6 +44,8 @@ MonoBehaviour:
     .jpg
 
     .mat
+
+    .md
 
     .meta
 
@@ -71,8 +71,6 @@ MonoBehaviour:
 
     .ptx
 
-    .shader
-
     .spm
 
     .spriteatlas
@@ -84,6 +82,8 @@ MonoBehaviour:
     .tiff
 
     .ttf
+
+    .txt
 
     .unity
 
