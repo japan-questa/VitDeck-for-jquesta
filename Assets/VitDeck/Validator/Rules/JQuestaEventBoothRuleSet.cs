@@ -85,6 +85,7 @@ namespace VitDeck.Validator
                 new ReflectionProbeRule(
                     LocalizedMessage.Get("VketRuleSetBase.ReflectionProbeRule.Title"),
                     new[]{ ReflectionProbeMode.Custom, ReflectionProbeMode.Baked }),
+                new ReflectionProbeResolutionRule("ReflectionProbe解像度制限", 128),
 
                 // Audio Source
                 new ComponentMaxCountRule("AudioSource数制限", typeof(AudioSource), 1),
