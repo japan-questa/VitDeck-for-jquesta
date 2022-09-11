@@ -31,6 +31,7 @@ namespace VitDeck.Main
 
         private static readonly IEnumerable<string> OtherResourceRootPaths = new string[]
         {
+            "Assets/VketAssets",
         };
 
         private static string GetPackageName()
