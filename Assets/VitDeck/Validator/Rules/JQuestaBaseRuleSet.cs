@@ -109,6 +109,9 @@ namespace VitDeck.Validator
 
                 new ExhibitStructureRule(LocalizedMessage.Get("VketRuleSetBase.ExhibitStructureRule.Title")),
 
+                // 出展ID、Reference Object以外のオブジェクトをルートに置かない
+                new SceneStructureRule("シーン構造ルール"),
+
                 new StaticFlagRule(LocalizedMessage.Get("VketRuleSetBase.StaticFlagsRule.Title")),
 
                 new MeshRendererRule(LocalizedMessage.Get("VketRuleSetBase.MeshRendererRule.Title")),
