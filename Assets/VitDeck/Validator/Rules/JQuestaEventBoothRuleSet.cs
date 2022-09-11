@@ -49,7 +49,7 @@ namespace VitDeck.Validator
                 // VRC Pickup
                 new PrefabLimitRule(
                     LocalizedMessage.Get("VketRuleSetBase.PickupObjectSyncPrefabLimitRule.Title", 5),
-                    VRCUdonSampleOfficialAssetData.PickupObjectSyncPrefabGUIDs,
+                    JQuestaAssetData.PickupObjectSyncPrefabGUIDs,
                     limit: 5),
 
                 // Animator

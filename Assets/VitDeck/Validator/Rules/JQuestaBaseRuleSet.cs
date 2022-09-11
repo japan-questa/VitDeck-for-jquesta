@@ -30,12 +30,12 @@ namespace VitDeck.Validator
         public JQuestaBaseRuleSet() : base()
         {
             officialPrefabsDetector = new PrefabPartsDetector(
-                VRCUdonSampleOfficialAssetData.AudioSourcePrefabGUIDs,
-                VRCUdonSampleOfficialAssetData.AvatarPedestalPrefabGUIDs,
-                VRCUdonSampleOfficialAssetData.PickupObjectSyncPrefabGUIDs,
-                VRCUdonSampleOfficialAssetData.CanvasPrefabGUIDs,
-                VRCUdonSampleOfficialAssetData.PointLightProbeGUIDs,
-                VRCUdonSampleOfficialAssetData.UdonBehaviourPrefabGUIDs);
+                JQuestaAssetData.AudioSourcePrefabGUIDs,
+                JQuestaAssetData.AvatarPedestalPrefabGUIDs,
+                JQuestaAssetData.PickupObjectSyncPrefabGUIDs,
+                JQuestaAssetData.CanvasPrefabGUIDs,
+                JQuestaAssetData.PointLightProbeGUIDs,
+                JQuestaAssetData.UdonBehaviourPrefabGUIDs);
         }
 
         public IRule[] GetRules()
@@ -67,9 +67,9 @@ namespace VitDeck.Validator
                     Exporter.Exporter.GetExportSettings().First(setting => setting.name == ExportSettingName)
                 ),
 
-                new ExistInSubmitFolderRule(LocalizedMessage.Get("VketRuleSetBase.ExistInSubmitFolderRule.Title"), VRCUdonSampleOfficialAssetData.GUIDs, targetFinder),
+                new ExistInSubmitFolderRule(LocalizedMessage.Get("VketRuleSetBase.ExistInSubmitFolderRule.Title"), JQuestaAssetData.GUIDs, targetFinder),
 
-                new AssetGuidBlacklistRule(LocalizedMessage.Get("VketRuleSetBase.OfficialAssetDontContainRule.Title"), VRCUdonSampleOfficialAssetData.GUIDs),
+                new AssetGuidBlacklistRule(LocalizedMessage.Get("VketRuleSetBase.OfficialAssetDontContainRule.Title"), JQuestaAssetData.GUIDs),
 
                 new ContainMatOrTexInAssetRule(LocalizedMessage.Get("VketRuleSetBase.ContainMatOrTexInAssetRule.Title")),
 
@@ -90,7 +90,7 @@ namespace VitDeck.Validator
                     size: BoothSizeLimit,
                     margin: 0.01f,
                     Vector3.zero,
-                    VRCUdonSampleOfficialAssetData.SizeIgnorePrefabGUIDs),
+                    JQuestaAssetData.SizeIgnorePrefabGUIDs),
                 
                 ////////////////////////////////////////////////////////////////
                 ////                     コンポーネント                     ////
@@ -99,7 +99,7 @@ namespace VitDeck.Validator
                 // コンポーネントのホワイトリスト制限
                 new UsableComponentListRule(LocalizedMessage.Get("VketRuleSetBase.UsableComponentListRule.Title"),
                     GetComponentReferences(),
-                    ignorePrefabGUIDs: VRCUdonSampleOfficialAssetData.GUIDs,
+                    ignorePrefabGUIDs: JQuestaAssetData.GUIDs,
                     unregisteredComponent: ValidationLevel.DISALLOW),
                 
                 
