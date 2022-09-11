@@ -107,8 +107,6 @@ namespace VitDeck.Validator
                 ////                 GameObjectのStatic設定                 ////
                 ////////////////////////////////////////////////////////////////
 
-                new ExhibitStructureRule(LocalizedMessage.Get("VketRuleSetBase.ExhibitStructureRule.Title")),
-
                 // 出展ID、Reference Object以外のオブジェクトをルートに置かない
                 new SceneStructureRule("シーン構造ルール"),
 

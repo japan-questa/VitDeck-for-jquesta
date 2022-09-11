@@ -164,6 +164,8 @@ namespace VitDeck.Validator
                 ////                 GameObjectのStatic設定                 ////
                 ////////////////////////////////////////////////////////////////
 
+                new ExhibitStructureRule(LocalizedMessage.Get("VketRuleSetBase.ExhibitStructureRule.Title")),
+
                 // UdonBehaviourを含むオブジェクト、UdonBehaviourによって操作を行うオブジェクトは全て入稿ルール C.Scene内階層規定におけるDynamicオブジェクトの階層下に入れてください
                 new UdonDynamicObjectParentRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonDynamicObjectParentRule.Title")),
             }).ToArray();
