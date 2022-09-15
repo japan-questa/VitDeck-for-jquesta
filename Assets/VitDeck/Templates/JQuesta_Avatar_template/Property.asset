@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8791441c2e8fe6e4dac55f7b669808d5, type: 3}
   m_Name: Property
   m_EditorClassIdentifier: 
-  templateName: "\u3058\u3083\u3071\u3093\u304F\u3048\u3059\u305F"
+  templateName: "\u3058\u3083\u3071\u3093\u304F\u3048\u3059\u305F\u3000\u30A2\u30D0\u30BF\u30FC\u51FA\u5C55"
   description: 
   lisenseFile: {fileID: 4900000, guid: b1d64992f791b2b4d8400949893a3ea2, type: 3}
   developer: "\u3058\u3083\u3071\u3093\u304F\u3048\u3059\u305F"
