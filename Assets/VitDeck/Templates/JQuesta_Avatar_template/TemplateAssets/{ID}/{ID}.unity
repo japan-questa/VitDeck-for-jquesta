@@ -438,7 +438,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1558382495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1427037861, guid: 0dc8d46c05bb0c8478a899fa2a1b87e0, type: 3}
+  m_Script: {fileID: -1427037861, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   launchedFromSDKPipeline: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1558382495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -17141911, guid: adb75188f3cc22e4a92af0c998f8d1e8, type: 3}
+  m_Script: {fileID: -17141911, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawns:
