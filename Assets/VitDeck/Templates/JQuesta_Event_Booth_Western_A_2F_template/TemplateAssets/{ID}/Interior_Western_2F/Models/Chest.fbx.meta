@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f8368b4bdb647779e7730faf37044ff
+guid: df7d41f93c4c41e8be3d26274619e0d7
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Chest
-    second: {fileID: 2100000, guid: 53f7b28a7852476db1d706995b4e8670, type: 2}
+    second: {fileID: 2100000, guid: 983e313f8cde4ecea1fe9e64abb197ec, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d8d3109041b4129ba3b72a94b18ee19
+guid: 50cdc70fdfcb48cda02452135cac9993
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Zabuton
-    second: {fileID: 2100000, guid: d3da6eb0605449108d604471467a205a, type: 2}
+    second: {fileID: 2100000, guid: 9df8954a96fb4fa2aa384f351956dd63, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

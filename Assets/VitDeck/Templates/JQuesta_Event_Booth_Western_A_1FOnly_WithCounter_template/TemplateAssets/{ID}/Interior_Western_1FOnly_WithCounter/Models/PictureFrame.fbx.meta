@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3bbfa55a27c462e992ad2780ac14884
+guid: 643fb0f9c8ec447ba4e6a9cd95f93fa3
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: PictureFrame
-    second: {fileID: 2100000, guid: b59d2b5bc8024579ae97b18ac792956d, type: 2}
+    second: {fileID: 2100000, guid: 140954b695e74bb28d47d3fdae7d10ac, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9051d25969b04e92b12c8b35ab8d7d99
+guid: 17c6a9f23bd24eaa88122f1ec30bb21a
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Koagari
-    second: {fileID: 2100000, guid: 5bab45405879488d82af2597fe6c1977, type: 2}
+    second: {fileID: 2100000, guid: 9c196489c749450bbdee5965df240b61, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

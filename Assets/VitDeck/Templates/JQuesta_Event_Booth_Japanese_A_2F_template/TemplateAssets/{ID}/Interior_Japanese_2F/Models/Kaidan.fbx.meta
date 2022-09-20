@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff623c19391e46f1a3854f57f9ea6890
+guid: 117a68aba3e148f48a73617a6a210e5c
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Kaidan
-    second: {fileID: 2100000, guid: 9616e76b65104a6dab8053c13c36176c, type: 2}
+    second: {fileID: 2100000, guid: cec602661cfd4a3e81020af07818267b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

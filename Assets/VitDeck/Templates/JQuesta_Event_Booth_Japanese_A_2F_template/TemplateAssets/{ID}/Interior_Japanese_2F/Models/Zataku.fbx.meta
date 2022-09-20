@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 850213faa55547f0a4d389133d6a4d71
+guid: 0d17174c632e46c78f0f86fa7a84e5b1
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Zataku
-    second: {fileID: 2100000, guid: 095061eda29742c2aec50b092e962368, type: 2}
+    second: {fileID: 2100000, guid: 73d7ae6fe45a43b2ad42a5f2e6e32ad6, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

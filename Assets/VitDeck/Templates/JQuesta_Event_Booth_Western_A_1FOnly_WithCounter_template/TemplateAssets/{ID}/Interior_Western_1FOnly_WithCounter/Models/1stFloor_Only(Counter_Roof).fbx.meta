@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0369f3048773438db6bb3de5c30ece6e
+guid: 09474e3e58cd489ba035227f8b7e580f
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Booth
-    second: {fileID: 2100000, guid: 700a64bd21574389b8e26058e83b46be, type: 2}
+    second: {fileID: 2100000, guid: c7287ec28dad4bd1a09beee65c492568, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

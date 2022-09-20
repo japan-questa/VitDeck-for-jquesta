@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 518a180e488642fbafa95c3ba064a9db
+guid: 81ee31e61c4d4d628218c9276b9158f9
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Shoji
-    second: {fileID: 2100000, guid: 470e2cf57d194b3f929d61bcd0edd48a, type: 2}
+    second: {fileID: 2100000, guid: 88b464571bdb45bab01d91a2fdb9640e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

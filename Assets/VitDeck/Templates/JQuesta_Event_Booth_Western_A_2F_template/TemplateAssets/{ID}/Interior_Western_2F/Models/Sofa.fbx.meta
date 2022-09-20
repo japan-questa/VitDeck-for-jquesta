@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 982c495e208141b09d4f4ca696b4200b
+guid: 9d895bd74d3a4050bfd87060bedad617
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sofa
-    second: {fileID: 2100000, guid: f336affc64d24835aa0f6ccad2e5f4a4, type: 2}
+    second: {fileID: 2100000, guid: 70b6ae028ea3438aaeaa66da250eb604, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

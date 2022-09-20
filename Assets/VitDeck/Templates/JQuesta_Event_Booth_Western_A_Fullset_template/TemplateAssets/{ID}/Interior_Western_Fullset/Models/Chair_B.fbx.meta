@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f16c338f9f3c4a76ae3da7ce06c23343
+guid: 76422b5d8fcf43999ec61c9361a5ae9d
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Chair
-    second: {fileID: 2100000, guid: 59945c5dcde4482ba9a91c723e65fd12, type: 2}
+    second: {fileID: 2100000, guid: 0210e749f0b44be5bd0573809710776d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

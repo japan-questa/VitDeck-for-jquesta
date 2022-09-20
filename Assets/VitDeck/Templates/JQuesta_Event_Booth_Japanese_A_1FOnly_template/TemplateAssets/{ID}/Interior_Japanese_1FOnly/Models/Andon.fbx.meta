@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fd136a03bd2a44b3950b08c5b5d6e4f1
+guid: 03ea9e8ed40946a3a81eddc8d9b53fcf
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Andon
-    second: {fileID: 2100000, guid: ce75d1bdac3047a79be8b27871e41534, type: 2}
+    second: {fileID: 2100000, guid: ad0bdd8106d94d5bb0ac945c4a700a1c, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bb8f35259e5148d99af217063fe7bb6d
+guid: 8a8025e424db479d9ec5c0c34f75105d
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Kakejiku
-    second: {fileID: 2100000, guid: e0ebd2209f334e9ca27b4bd28cd325a7, type: 2}
+    second: {fileID: 2100000, guid: d430de5b671a4107a19da746ade00d85, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

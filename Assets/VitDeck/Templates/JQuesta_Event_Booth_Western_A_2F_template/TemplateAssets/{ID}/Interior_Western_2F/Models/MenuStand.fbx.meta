@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 10dcbf1e877046bda2e897714c1a84a5
+guid: 580c487803ba449fa9b767eb9dcfe432
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MenuBook
-    second: {fileID: 2100000, guid: 13e1f6785ffd4ec693cf24b3bb46b4d6, type: 2}
+    second: {fileID: 2100000, guid: 89758528790d41d9b6feb482a23ae6e8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
