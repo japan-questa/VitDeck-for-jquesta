@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8791441c2e8fe6e4dac55f7b669808d5, type: 3}
+  m_Name: Property
+  m_EditorClassIdentifier: 
+  templateName: "\u3058\u3083\u3071\u3093\u304F\u3048\u3059\u305F\u3000\u30A4\u30D9\u30F3\u30C8\u51FA\u5C55
+    (\u30D6\u30FC\u30B9)\u3000\u6D0B\u98A8A 1\u968E\u306E\u307F (\u30AB\u30A6\u30F3\u30BF\u30FC\u306A\u3057)"
+  description: 
+  lisenseFile: {fileID: 4900000, guid: 07e3342574c11894ebf4417d6ff4ca15, type: 3}
+  developer: "\u3058\u3083\u3071\u3093\u304F\u3048\u3059\u305F"
+  developerUrl: https://github.com/japan-questa/VitDeck-for-jquesta
+  replaceList:
+  - ID: ID
+    searchString: ID
+    label: "\u51FA\u5C55ID"
