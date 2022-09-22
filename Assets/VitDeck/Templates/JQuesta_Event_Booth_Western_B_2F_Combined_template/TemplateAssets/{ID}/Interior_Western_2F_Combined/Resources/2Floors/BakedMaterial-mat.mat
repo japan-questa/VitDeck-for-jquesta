@@ -10,7 +10,7 @@ Material:
   m_Name: BakedMaterial-mat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 2
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -36,11 +36,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 2cf1adeaa78d4a90906218f31bffb241, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1af81785e651e114b8dc842cb855f250, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b6b73b70b5564b21837a08a47769a143, type: 3}
+        m_Texture: {fileID: 2800000, guid: 97007039e0b4824469224139f22a7d51, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
