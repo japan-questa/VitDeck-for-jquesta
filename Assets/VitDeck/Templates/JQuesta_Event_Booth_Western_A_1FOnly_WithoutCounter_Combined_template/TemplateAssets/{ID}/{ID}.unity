@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -192,8 +192,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: c4a04848430a4953897904eba45ed441, type: 3}
 --- !u!4 &79879993 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2536362072380770219, guid: c4a04848430a4953897904eba45ed441,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 79879992}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &114614214
