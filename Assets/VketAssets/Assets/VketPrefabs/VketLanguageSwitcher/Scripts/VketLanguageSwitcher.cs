@@ -1,4 +1,4 @@
-﻿
+
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -117,9 +117,9 @@ namespace Vket.VketPrefabs
             if (EditorGUI.EndChangeCheck())
             {
                 enSpriteProperty.objectReferenceValue = toEnSprite;
-                var spriteRenderer = (SpriteRenderer)serializedObject.FindProperty("spriteRenderer").objectReferenceValue;
-                Undo.RecordObject(spriteRenderer, "Modify switch to english sprite");
-                spriteRenderer.sprite = toEnSprite;
+//                var spriteRenderer = (SpriteRenderer)serializedObject.FindProperty("spriteRenderer").objectReferenceValue;
+//                Undo.RecordObject(spriteRenderer, "Modify switch to english sprite");
+//                spriteRenderer.sprite = toEnSprite;
             }
 
             // Draw Field of Switch To Japanese Sprite
