@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEditor;
 using VitDeck.Language;
 
 namespace VitDeck.Validator
@@ -81,6 +82,13 @@ namespace VitDeck.Validator
                 
                 // ビルドサイズの確認をAndroidプラットフォームで行う
                 new UnityPlatformRule("Unityプラットフォーム", UnityPlatformRule.Platform.Android),
+
+                new TextureImporterFormatRule("テクスチャ圧縮形式", "Android", new[]
+                {
+                    TextureImporterFormat.ASTC_6x6,
+                    TextureImporterFormat.ASTC_8x8,
+                    TextureImporterFormat.ASTC_10x10,
+                }),
                 
                 ////////////////////////////////////////////////////////////////
                 ////                         シーン                         ////

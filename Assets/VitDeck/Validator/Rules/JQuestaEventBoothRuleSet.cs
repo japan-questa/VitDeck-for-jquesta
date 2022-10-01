@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEditor;
 using VitDeck.Language;
 using VRC.SDKBase;
 
@@ -34,13 +33,6 @@ namespace VitDeck.Validator
                     LocalizedMessage.Get("VketRuleSetBase.LightMapsLimitRule.Title", 1, 256),
                     lightmapCountLimit: 1,
                     lightmapResolutionLimit: 256),
-
-                new TextureImporterFormatRule("テクスチャ圧縮形式", "Android", new[]
-                {
-                    TextureImporterFormat.ASTC_6x6,
-                    TextureImporterFormat.ASTC_8x8,
-                    TextureImporterFormat.ASTC_10x10,
-                }),
 
                 ////////////////////////////////////////////////////////////////
                 ////                      コンポーネント                    ////
