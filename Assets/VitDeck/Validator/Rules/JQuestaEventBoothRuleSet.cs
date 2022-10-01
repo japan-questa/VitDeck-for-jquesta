@@ -98,8 +98,6 @@ namespace VitDeck.Validator
                 new UdonBehaviourLayerConstraintRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonBehaviourLayerConstraintRule.Title")),
                 // AllowOwnershipTransferOnCollisionは必ずFalseにすること
                 new UdonBehaviourAllowOwnershipTransferOnCollisionIsFalseRule(LocalizedMessage.Get("UdonBehaviourAllowOwnershipTransferOnCollisionIsFalseRule.Title")),
-                // VRCPickup は UdonBehaviour [AutoResetPickup] を持つ必要があります。
-                new VRCPickupUdonBehaviourRule(LocalizedMessage.Get("VketUdonRuleSetBase.X08_VRCPickupUdonBehaviourRule.Title")),
 
                 ////////////////////////////////////////////////////////////////
                 ////                    使用可能シェーダー                  ////
