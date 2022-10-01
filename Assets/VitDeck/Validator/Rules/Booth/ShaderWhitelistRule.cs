@@ -51,14 +51,17 @@ namespace VitDeck.Validator
                     }
 
                     var path = AssetDatabase.GetAssetPath(Shader.Find(shader.name));
-                    if (path == "Resources/unity_builtin_extra"
-                        && this.shaderNameGUIDPairs[shader.name] != null)
+                    if (path == "Resources/unity_builtin_extra")
                     {
-                        this.AddIssue(new Issue(gameObject, IssueLevel.Error, string.Format(
-                            "ビルトインシェーダー「{0}」と同名のシェーダーが使用されています:\n{1}",
-                            shader.name,
-                            path
-                        ), solution, solutionURL));
+                        // ビルトインシェーダー
+                        if (this.shaderNameGUIDPairs[shader.name] != null)
+                        {
+                            this.AddIssue(new Issue(gameObject, IssueLevel.Error, string.Format(
+                                "ビルトインシェーダー「{0}」と同名のシェーダーが使用されています:\n{1}",
+                                shader.name,
+                                path
+                            ), solution, solutionURL));
+                        }
                         continue;
                     }
 
