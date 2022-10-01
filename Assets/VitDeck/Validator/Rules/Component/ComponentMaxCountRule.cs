@@ -32,8 +32,8 @@ namespace VitDeck.Validator
 					AddIssue(new Issue(
 						component,
 						IssueLevel.Error, 
-						message: string.Format("{0}コンポーネントが{1}個あります。", type, limit), 
-						solution: string.Format("{0}個以下になるよう減らしてください。", count)));
+						message: string.Format("{0}コンポーネントが{1}個あります。", type, count), 
+						solution: string.Format("{0}個以下になるよう減らしてください。", limit)));
 				}
 			}
 		}
