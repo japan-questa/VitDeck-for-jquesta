@@ -94,8 +94,6 @@ namespace VitDeck.Validator
                 new AllMaxParticlesMaxCountRule("Particle System", 100),
 
                 // Udon Behaviour
-                // 全てのUdonBehaviourオブジェクトの親であるDynamicオブジェクトは初期でInactive状態にしてください
-                new UdonDynamicObjectInactiveRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonDynamicObjectInactiveRule.Title")), 
                 // UdonBehaviourを含むオブジェクトのLayerはUserLayer23としてください
                 new UdonBehaviourLayerConstraintRule(LocalizedMessage.Get("VketUdonRuleSetBase.UdonBehaviourLayerConstraintRule.Title")),
                 // AllowOwnershipTransferOnCollisionは必ずFalseにすること
