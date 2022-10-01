@@ -22,7 +22,7 @@ namespace VitDeck.Validator
 
         protected override Vector3 BoothSizeLimit => new Vector3(4, 5, 4);
 
-        public new IRule[] GetRules()
+        public override IRule[] GetRules()
         {
             return base.GetRules().Concat(new IRule[]
             {
