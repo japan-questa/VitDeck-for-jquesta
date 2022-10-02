@@ -47,17 +47,23 @@ namespace VitDeck.Validator
                 return;
             }
 
-            importer.GetPlatformTextureSettings(platform, out var _, out var textureFormat);
-            if (importerFormats.Contains(textureFormat))
-            {
-                return;
+            var settings = importer.GetPlatformTextureSettings(platform);
+            if (!settings.overridden) {
+                AddIssue(new Issue(
+                    AssetDatabase.LoadMainAssetAtPath(path),
+                    IssueLevel.Error,
+                    string.Format("テクスチャの{0}プラットフォームのOverrideが無効になっています。", platform),
+                    string.Format("テクスチャのインポート設定で、{0}プラットフォームのOverrideへチェックを入れてください。", platform)));
             }
 
-            AddIssue(new Issue(
-                AssetDatabase.LoadMainAssetAtPath(path),
-                IssueLevel.Error,
-                string.Format("テクスチャの{0}プラットフォームの圧縮フォーマットが{1}になっています。", platform, textureFormat),
-                string.Format("[{0}] のいずれかを選択してください。", string.Join(", ", importerFormats))));
+            if (!importerFormats.Contains(settings.format))
+            {
+                AddIssue(new Issue(
+                    AssetDatabase.LoadMainAssetAtPath(path),
+                    IssueLevel.Error,
+                    string.Format("テクスチャの{0}プラットフォームの圧縮フォーマットが{1}になっています。", platform, settings.format),
+                    string.Format("[{0}] のいずれかを選択してください。", string.Join(", ", importerFormats))));
+            }
         }
     }
 }
