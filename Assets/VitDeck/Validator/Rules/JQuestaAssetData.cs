@@ -64,463 +64,855 @@ namespace VitDeck.Validator
 
             #endregion
 
-            #region VRCSDK
+            #region VRCSDK3 - Base
 
-            "2cdbe2e71e2c46e48951c13df254e5b1",  // Assets/VRCSDK/version.txt
-            "820ee6e459999be418b410c7af108bc3",  // Assets/VRCSDK/Dependencies/AWSSDK/AWSSDK.CognitoIdentity.dll
-            "17e2ad8740ce0ab4eb1a95a73e362865",  // Assets/VRCSDK/Dependencies/AWSSDK/AWSSDK.CognitoIdentity.dll.mdb
-            "aecaffc7454b52e448fc0ea1aef2dd1d",  // Assets/VRCSDK/Dependencies/AWSSDK/AWSSDK.Core.dll
-            "027e8b8acf565544d9050219e1521b7e",  // Assets/VRCSDK/Dependencies/AWSSDK/AWSSDK.Core.dll.mdb
-            "d4055bfc0cd67d642a7eceaf547c4901",  // Assets/VRCSDK/Dependencies/AWSSDK/AWSSDK.S3.dll
-            "0da239ac72288814a9c4b799c7674b25",  // Assets/VRCSDK/Dependencies/AWSSDK/AWSSDK.S3.dll.mdb
-            "625a50dd0dd525a49a41cb3e3117fa15",  // Assets/VRCSDK/Dependencies/AWSSDK/AWSSDK.SecurityToken.dll
-            "b93a9778ddf074845b1649181fda7e86",  // Assets/VRCSDK/Dependencies/AWSSDK/AWSSDK.SecurityToken.dll.mdb
-            "34b0990e1522a284b9666d6821cd601c",  // Assets/VRCSDK/Dependencies/DotZLib/DotZLib.dll
-            "b609c54f9d3581e4fa22b3e389fd8d33",  // Assets/VRCSDK/Dependencies/DotZLib/Plugins/x86/zlibwapi.dll
-            "54f59547b5261e64f8256d6daaa01b17",  // Assets/VRCSDK/Dependencies/DotZLib/Plugins/x86_64/zlibwapi.dll
-            "a2e4b2ce02fa7914895069e5fdbf112d",  // Assets/VRCSDK/Dependencies/librsync/Blake2Sharp.dll
-            "912b2ac597cb1ad4c9bdc1a98ec15459",  // Assets/VRCSDK/Dependencies/librsync/librsync.net.dll
-            "cb850b86de9091d4db4595959c56f954",  // Assets/VRCSDK/Dependencies/Oculus/Spatializer/Editor/ONSPAudioSourceEditor.cs
-            "e503ea6418d27594caa33b93cac1b06a",  // Assets/VRCSDK/Dependencies/Oculus/Spatializer/Scripts/ONSPAudioSource.cs
-            "ad074644ff568a14187a3690cfbd7534",  // Assets/VRCSDK/Dependencies/Oculus/Spatializer/Scripts/ONSPSettings.cs
-            "5a8cc42eaba7a2a41b6ca3be3c40b315",  // Assets/VRCSDK/Dependencies/SharpZipLib/ICSharpCode.SharpZipLib.dll
-            "d471b09e7f06a69458457ec63d3532b8",  // Assets/VRCSDK/Dependencies/VRChat/Settings.asset
-            "10d9f721d76e07a47bc9e5f61e2fae72",  // Assets/VRCSDK/Dependencies/VRChat/Editor/EnvConfig.cs
-            "c3399613f583f3e46b2df27ae87dd5d6",  // Assets/VRCSDK/Dependencies/VRChat/Editor/HDRColorFixerUtility.cs
-            "7b8bb626428d0f341b9ed6a68cb5c9cc",  // Assets/VRCSDK/Dependencies/VRChat/Editor/SDKUpdater.cs
-            "679ba0056bf110c4db8b550082e73a5f",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ShaderKeywordsUtility.cs
-            "4a9696f3dea8a764f9c4bc6d2e652b74",  // Assets/VRCSDK/Dependencies/VRChat/Editor/VRCCachedWWW.cs
-            "cb5d1f9882b08564cae97b2b14ad4e8f",  // Assets/VRCSDK/Dependencies/VRChat/Editor/VRC_EditorTools.cs
-            "f4cf5dd705ab67149afaba40b4a8fa7e",  // Assets/VRCSDK/Dependencies/VRChat/Editor/VRC_SdkSplashScreen.cs
-            "3d6a1d7b0624f414ba6fb922687a06da",  // Assets/VRCSDK/Dependencies/VRChat/Editor/AWS/S3Manager.cs
-            "21332e1f0d937794d916d2402ba1943a",  // Assets/VRCSDK/Dependencies/VRChat/Editor/BuildPipeline/VRC.SDKBase.Editor.BuildPipeline.asmdef
-            "0a1d20f4241085e46bdddc71b691465b",  // Assets/VRCSDK/Dependencies/VRChat/Editor/BuildPipeline/Samples/VRCSDKBuildRequestedCallbackSample.cs
-            "39cdf3092ab81be4b9e623cb5a8819d8",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/ApiCacheEditor.cs
-            "0a364ece829b6234888c59987a305a00",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/AutoAddSpatialAudioComponents.cs
-            "89005ebc9543e0a4284893c09ca19b1d",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/EditorCoroutine.cs
-            "3d6c2e367eaa9564ebf6267ec163cfbd",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/EditorHandling.cs
-            "4810e652e8242384c834320970702290",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/EventHandlerEditor.cs
-            "482185bf29f12074dada194ffef6a682",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/OldTriggerEditors.cs
-            "5e83254bb97e84795ac882692ae124ba",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRCAvatarDescriptorEditor.cs
-            "26a75599848adb449b7aceed5090e35c",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRCObjectSpawnEditor.cs
-            "ed4aad2698d3b62408e69b57c7748791",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRCObjectSyncEditor.cs
-            "8986a640e24a0754ea0aded12234b808",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRCPlayerModEditorWindow.cs
-            "792e7964a56e51f4188e1221751642e9",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRCPlayerModsEditor.cs
-            "5262a02c32e41e047bdfdfc3b63db8ff",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRCPlayerStationEditor.cs
-            "e9cbc493bbbc443fb92898aa84d221ec",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRCSceneDescriptorEditor.cs
-            "eeda995d0ceac6443a54716996eab52e",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_AvatarVariationsEditor.cs
-            "0ac7998a36f085844847acbc046d4e27",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_DataStorageEditor.cs
-            "3b63b118c0591b548ba1797e6be4292e",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_DestructibleStandardEditor.cs
-            "e19a7147a2386554a8e4d6e414f190a2",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_ObjectSyncEditor.cs
-            "4aff4e5c0d600c845b29d7b8b7965d68",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_PickupEditor.cs
-            "5c545625e0bf93045ac1c5864141c5c1",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_PlayerAudioOverrideEditor.cs
-            "0d2d4cba733f5eb4ba170368e67710d2",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_SpatialAudioSourceEditor.cs
-            "ae0e74693b7899f47bd98864f94b9311",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_SyncVideoPlayerEditor.cs
-            "3f9dccfed0b072f49a307b3f20a7e768",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_SyncVideoStreamEditor.cs
-            "3aecd666943878944a811acb9db2ace7",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_TriggerEditor.cs
-            "d09b36020f697be4d9a0f5a6a48cfa83",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_WebPanelEditor.cs
-            "764e26c1ca28e2e45a30c778c1955a47",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components/VRC_YouTubeSyncEditor.cs
-            "d57b23c04034119448f23c5fdbc57662",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components3/VRCDestructibleUdonEditor.cs
-            "8901d07a685ca424492a3cabff506184",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components3/VRCPlayerStationEditor3.cs
-            "4b2b9ac625bc5b04c887ff9ee9b5fdbe",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components3/VRCSceneDescriptorEditor3.cs
-            "a8cc4c1876b26174fbaeb062178a6bda",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components3/VRC_PickupEditor3.cs
-            "3f8f999a8e1ebee4588f94a8a618d7c6",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Components3/VRC_SpatialAudioSourceEditor3.cs
-            "310a760e312f2984e85eece367bab19a",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ControlPanel/IVRCSdkControlPanelBuilder.cs
-            "20b4cdbdda9655947aab6f8f2c90690f",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ControlPanel/VRCSdkControlPanel.cs
-            "5066cd5c1cc208143a1253cac821714a",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ControlPanel/VRCSdkControlPanelAccount.cs
-            "4c73e735ee0380241b186a8993fa56bf",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ControlPanel/VRCSdkControlPanelBuilder.cs
-            "c768b42ca9a2f2b48afeb1fa03d5e1bf",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ControlPanel/VRCSdkControlPanelBuilderAttribute.cs
-            "c7333cdb3df19724b84b4a1b05093fe0",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ControlPanel/VRCSdkControlPanelContent.cs
-            "f3507a74e4b8cfd469afac127fa5f4e5",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ControlPanel/VRCSdkControlPanelHelp.cs
-            "8357b9b7ef2416946ae86f465a64c0e0",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ControlPanel/VRCSdkControlPanelSettings.cs
-            "f2a720a30f1043247af7742fdfd0b8e5",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ControlPanel/VRCSdkControlPanelWorldBuilder.cs
-            "93710d221addc0243ba90dd20369844b",  // Assets/VRCSDK/Dependencies/VRChat/Editor/SDK3Compatibility/VRCSdk3Analysis.cs
-            "c18570190ea21fa4babc80af77d4d766",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ShaderStripping/StripPostProcessing.cs
-            "b1e8486f7c7c81a4ea45be9776971082",  // Assets/VRCSDK/Dependencies/VRChat/Editor/ShaderStripping/VRC.SDKBase.Editor.ShaderStripping.asmdef
-            "62d40cc4e8f8494695f0102c58b3ea60",  // Assets/VRCSDK/Dependencies/VRChat/Editor/Validation/Performance/SDKPerformanceDisplay.cs
-            "da07ab9b78cb0432e95e11e2cb619ea7",  // Assets/VRCSDK/Dependencies/VRChat/Materials/BlueprintCam.mat
-            "94b649c2bd1ac4cac95049605dc5333d",  // Assets/VRCSDK/Dependencies/VRChat/Materials/BlueprintCam.renderTexture
-            "2166f6bbfce69594fad494087eca58e8",  // Assets/VRCSDK/Dependencies/VRChat/Materials/damageGrey.mat
-            "e13e96301b7c8214dac6883be5b82bfa",  // Assets/VRCSDK/Dependencies/VRChat/Models/damageSphere.fbx
-            "841c3ce718e8b61408005c1cfce6b7de",  // Assets/VRCSDK/Dependencies/VRChat/Models/Materials/lambert2.mat
-            "4acdf7b3eb426480bb5acf58638bd493",  // Assets/VRCSDK/Dependencies/VRChat/Resources/awsconfig.xml
-            "dd5614b710e774040ab715161f7dfaca",  // Assets/VRCSDK/Dependencies/VRChat/Resources/endpoints.customizations.json
-            "37b4abef7420c4c7ea71dbe76757498a",  // Assets/VRCSDK/Dependencies/VRChat/Resources/endpoints.json
-            "be98467dc5d3c4eb1aeef22952913b0e",  // Assets/VRCSDK/Dependencies/VRChat/Resources/VRCCam.prefab
-            "dce0dda226bd1f147a34f9b4660f5992",  // Assets/VRCSDK/Dependencies/VRChat/Resources/VRCProjectSettings.prefab
-            "b14e1b78a061f8543b2f4120b5c369fa",  // Assets/VRCSDK/Dependencies/VRChat/Resources/VRCSDKAvatar.prefab
-            "248f850c58993ed43bcaad6b934b7c92",  // Assets/VRCSDK/Dependencies/VRChat/Resources/vrcSdkBottomHeader.png
-            "551946bfd2b165f419f297805d1e1256",  // Assets/VRCSDK/Dependencies/VRChat/Resources/vrcSdkBottomHeader_Oculus_Quest.png
-            "d2244637721b4f3458280ffc1f9dd7cc",  // Assets/VRCSDK/Dependencies/VRChat/Resources/vrcSdkClDialogNewIcon.png
-            "38956f4b67ba0984587b1a913d05beea",  // Assets/VRCSDK/Dependencies/VRChat/Resources/vrcSdkHeader.png
-            "ff7f4f4963793a340bde459bc9975c07",  // Assets/VRCSDK/Dependencies/VRChat/Resources/vrcSdkHeaderWithCommunityLabs.png
-            "1d151b29d1d1c704daa27e4921e39129",  // Assets/VRCSDK/Dependencies/VRChat/Resources/vrcSdkSplashUdon1.png
-            "8458230047d35d4498b2de453f2cabda",  // Assets/VRCSDK/Dependencies/VRChat/Resources/vrcSdkSplashUdon2.png
-            "fc887d4eeb5a941ed86bca0135b05e2b",  // Assets/VRCSDK/Dependencies/VRChat/Resources/VRCSDKWorld.prefab
-            "e8e780ff40c6a484294bfec8711ced23",  // Assets/VRCSDK/Dependencies/VRChat/Resources/VRC_PlayerVisualDamage.prefab
-            "43066d8a73c579048891e3c123e252a0",  // Assets/VRCSDK/Dependencies/VRChat/Resources/2FAIcons/SDK_Warning_Triangle_icon.png
-            "f310c3dbad3125d4e8fc2e00bdc2acb4",  // Assets/VRCSDK/Dependencies/VRChat/Resources/CL_Icons/CL_Lab_Icon_256.png
-            "36349feed06587e479724a1a09c0b267",  // Assets/VRCSDK/Dependencies/VRChat/Resources/CL_Icons/Icon_New.png
-            "4109d4977ddfb6548b458318e220ac70",  // Assets/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Good_32.png
-            "644caf5607820c7418cf0d248b12f33b",  // Assets/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Great_32.png
-            "2886eb1248200a94d9eaec82336fbbad",  // Assets/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Horrible_32.png
-            "9296abd40c7c1934cb668aae07b41c69",  // Assets/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Medium_32.png
-            "e561d0406779ab948b7f155498d101ee",  // Assets/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Poor_32.png
-            "8ae6e7ea5b8982143aa8c2c4e2fe81c6",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/AnimatorPerformanceScanner.asset
-            "c2ca835e9f95b464b8a2df5c181ba44e",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/AudioPerformanceScanner.asset
-            "d162a2d08d890e644b79b605f1d1120e",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/ClothPerformanceScanner.asset
-            "371dfb95b91b4684eb1ad68d37d81ac9",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/DynamicBonePerformanceScanner.asset
-            "69c7115984bf82e46af96d6f144fe463",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/LightPerformanceScanner.asset
-            "07199be0cf1b2a34f8dff60d486129ea",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/LineRendererPerformanceScanner.asset
-            "e750aae2c41768e4485dfb9a6de00454",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/MeshPerformanceScanner.asset
-            "f4004220746a95a4e84a3909a49d844b",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/ParticlePerformanceScanner.asset
-            "18ec5f6f963b6774fa1b84c5bff0246f",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/PhysicsPerformanceScanner.asset
-            "986c284df70b4c34dad7e5ef27a86156",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/Scanners/TrailRendererPerformanceScanner.asset
-            "bf50321b92d503d4a823939356ce856d",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/ScannerSets/PerformanceScannerSet_Quest.asset
-            "b0d7b483809dd6441bb36507c9f64040",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/ScannerSets/PerformanceScannerSet_Windows.asset
-            "f0f530dea3891c04e8ab37831627e702",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/AvatarPerformanceStatLevels_Quest.asset
-            "e750436d0bab192489da0debe67ee879",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/Excellent_Quest.asset
-            "b25db21b17fba3d49a7248568fdb9870",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/Good_Quest.asset
-            "31feb7417182a80469408649071d10ac",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/Medium_Quest.asset
-            "171503e8193e15447967be1e3ca1e714",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/Poor_Quest.asset
-            "438f83f183e95f740877d4c22ed91af2",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/AvatarPerformanceStatLevels_Windows.asset
-            "88c46902276e7624e8adda9020bef28b",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/Excellent_Windows.asset
-            "38957d57ab5a7f145b954d20fc24b1d4",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/Good_Windows.asset
-            "65edaefdc2f87414594559cb89383b5b",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/Medium_Windows.asset
-            "595049d4e162571489f2437524d98a31",  // Assets/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/Poor_Windows.asset
-            "36c0d886a26373c46be857f2fc441071",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/ApiFileHelper.cs
-            "acadc6659c5ab3446ad0d5de2563f95f",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/AudioManagerSettings.cs
-            "8d047eaa3325d654aa62ccad6f73eb93",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/CommunityLabsConstants.cs
-            "e1c693656bf5d584b87df969efeb5536",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/ContentUploadedDialog.cs
-            "a3132e0ab7e16494a9d492087a1ca447",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/RuntimeAPICreation.cs
-            "1e5ebf65c5dceeb4c909aa7812bd2999",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/RuntimeBlueprintCreation.cs
-            "2bd5ee5d69ee0f3449bf2f81fcb7f4e3",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/RuntimeWorldCreation.cs
-            "0d49300ad532d4ae6b569b28de5b7dac",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/SceneSaver.cs
-            "10121679f780956408f9a434a526f553",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/MaterialFallback/FallbackMaterialCache.cs
-            "bef0a8d1d2c547119a62b7d7a5c512ea",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/ShaderValidation.cs
-            "8a90ec11b51863c4cb2d8a8cee31c2fb",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/ValidationUtils.cs
-            "9b03724cd556cb047b2da80492ea28a5",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/WorldValidation.cs
-            "15ecac6f7fdc1bc4fb723fee6f4635dd",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/AvatarPerformance.cs
-            "f1ce994297384ff1bc330196df61b7ca",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/AvatarPerformanceCategory.cs
-            "f28c978154794266b38d686139c6b872",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/MeshUtils.cs
-            "8cdca9d06d1b4732b9ccb82a38bb8d9c",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/PerformanceFilterSet.cs
-            "a5ed7498cb1a46c78eab031f5f32448c",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/PerformanceInfoDisplayLevel.cs
-            "5019a55ee9e2404c81bc61a39a010d8d",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/PerformanceRating.cs
-            "4afb61f36d144fc381114cd7f78d13e7",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/PerformanceScannerSet.cs
-            "abda65e062e44213aa3e1f4c82b400a8",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Filters/AbstractPerformanceFilter.cs
-            "0bd0691a021844f49444a04a959d6328",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/AbstractPerformanceScanner.cs
-            "08c8e931d0544866a0f626855d9c1841",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/AnimatorPerformanceScanner.cs
-            "b3a8bba736414d1aaa9e766da27b56b5",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/AudioPerformanceScanner.cs
-            "0cec88b5a46f459195f10a2f11fddb2f",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/ClothPerformanceScanner.cs
-            "a226df494ef04404a9a47c714822ab9f",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/DynamicBonePerformanceScanner.cs
-            "405778fdc32c44c1bb9fdd0476fb0007",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/LightPerformanceScanner.cs
-            "ec87392b85844f7bb526a48ec866a8f0",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/LineRendererPerformanceScanner.cs
-            "38bca10261df4ddfa10cff3b3bbb9428",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/MeshPerformanceScanner.cs
-            "10723e354ff14f98a49ab797b3f005e6",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/ParticlePerformanceScanner.cs
-            "6a94ecdeecd04f85824cc3244be5712a",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/PhysicsPerformanceScanner.cs
-            "2efd714b564547b4be1ebd1f2700668b",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Scanners/TrailRendererPerformanceScanner.cs
-            "1bf4fb79a49d4b109c4dce6b38e5548e",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Stats/AvatarPerformanceStats.cs
-            "f742c36dce5730f4d96e37d82c330584",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Stats/AvatarPerformanceStatsLevel.cs
-            "468554b1bfc447f41a20a2f5bae65d16",  // Assets/VRCSDK/Dependencies/VRChat/Scripts/Validation/Performance/Stats/AvatarPerformanceStatsLevelSet.cs
-            "9ae7399f0cf902a41a20f3487af8322a",  // Assets/VRCSDK/Dependencies/VRChat/SdkGraphics/SDK_Panel_Banner.png
-            "13d3efffb839ced4c8426a88a0c3e98c",  // Assets/VRCSDK/Dependencies/VRChat/Textures/damageGreyNoAlpha.png
-            "8d95767408d35544c98f92ef7279b8db",  // Assets/VRCSDK/Dependencies/VRChat/Textures/damageGRNoAlpha.png
-            "861bc2dd35aa1534d89330ffa4434b61",  // Assets/VRCSDK/Dependencies/VRChat/Textures/VRChatBanner.png
-            "3bb6d22e89000724b90fb830af69384b",  // Assets/VRCSDK/Plugins/sqlite3.dll
-            "4ecd63eff847044b68db9453ce219299",  // Assets/VRCSDK/Plugins/VRCCore-Editor.dll
-            "b0e1c0f72d838fe49bfe88b987a471bd",  // Assets/VRCSDK/Plugins/VRCCore-Standalone.dll
-            "215be632cb025bd429dd50a3fa942168",  // Assets/VRCSDK/Plugins/VRCSDK3-Editor.dll
-            "661092b4961be7145bfbe56e1e62337b",  // Assets/VRCSDK/Plugins/VRCSDK3.dll
-            "d09383607271b19468447945fda29e86",  // Assets/VRCSDK/Plugins/VRCSDK3Base-Editor.dll
-            "bdccfb093344e7545a49b72a64499682",  // Assets/VRCSDK/Plugins/VRCSDK3Base.dll
-            "dc5cab6c932db3247aab9f50c5f3bd5f",  // Assets/VRCSDK/Plugins/VRCSDKBase-Editor.dll
-            "db48663b319a020429e3b1265f97aff1",  // Assets/VRCSDK/Plugins/VRCSDKBase.dll
+            "856d44ba771142da4b8fc2cc47bc2169", // Packages/com.vrchat.base
+            "c5f84ed1cfe4e034c93031e8936428ab", // Packages/com.vrchat.base/license.txt
+            "1f872e4d36d785e409479da1c5fcde4c", // Packages/com.vrchat.base/package.json
+            "e3783acec36b0a84ba0c81ccfd1fc308", // Packages/com.vrchat.base/Editor
+            "fbb143d2122482848aff63a633c20704", // Packages/com.vrchat.base/Editor/VRCSDK
+            "182bdf489e961364e891f322dc1d31f1", // Packages/com.vrchat.base/Editor/VRCSDK/SampleHintCreator.cs
+            "6e9c6119ac4eb334284fb7b4bc6d1f05", // Packages/com.vrchat.base/Editor/VRCSDK/VRC.SDKBase.Editor.asmdef
+            "8a5eb0ad795b9544799dec3b042b6af9", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies
+            "16568113592da1e4c9924393ab2ab4ae", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/Oculus
+            "6d7067d2f71f9a4468d9d28dd19eeccf", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/Oculus/Spatializer
+            "cb850b86de9091d4db4595959c56f954", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/Oculus/Spatializer/ONSPAudioSourceEditor.cs
+            "02f6a9b57a5644647b5ccc8b9c8acf28", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat
+            "10d9f721d76e07a47bc9e5f61e2fae72", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/EnvConfig.cs
+            "0bc1f4d12c7c0f3468bd3469a5209dc1", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/FixAnimatorControllers.cs
+            "9a4af4545014b16439e24fcba1fd1e5e", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/FixConstraintUpdateOrder.cs
+            "c3399613f583f3e46b2df27ae87dd5d6", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/HDRColorFixerUtility.cs
+            "2ac39b32acc741458c6f8a502807384f", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ProtectVPMPackages.cs
+            "7b8bb626428d0f341b9ed6a68cb5c9cc", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/SDKUpdater.cs
+            "679ba0056bf110c4db8b550082e73a5f", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ShaderKeywordsUtility.cs
+            "0d2c09d149d213846ac4bdab38be0385", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/VRCCachedWebRequest.cs
+            "58f421a645644f18aca86b7d90ded374", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/VRCPackageSettings.cs
+            "cb5d1f9882b08564cae97b2b14ad4e8f", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/VRC_EditorTools.cs
+            "f4cf5dd705ab67149afaba40b4a8fa7e", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/VRC_SdkSplashScreen.cs
+            "41dfa12618ada604f98c12a95a3f455a", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/BuildPipeline
+            "21332e1f0d937794d916d2402ba1943a", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/BuildPipeline/VRC.SDKBase.Editor.BuildPipeline.asmdef
+            "6e2ea84994e53bd458fa73dfcfd0d671", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/BuildPipeline/Samples
+            "0a1d20f4241085e46bdddc71b691465b", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/BuildPipeline/Samples/VRCSDKBuildRequestedCallbackSample.cs
+            "027731dadc7571046abaf43e4f52e9ae", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components
+            "39cdf3092ab81be4b9e623cb5a8819d8", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/ApiCacheEditor.cs
+            "0a364ece829b6234888c59987a305a00", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/AutoAddSpatialAudioComponents.cs
+            "89005ebc9543e0a4284893c09ca19b1d", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/EditorCoroutine.cs
+            "3d6c2e367eaa9564ebf6267ec163cfbd", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/EditorHandling.cs
+            "4810e652e8242384c834320970702290", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/EventHandlerEditor.cs
+            "482185bf29f12074dada194ffef6a682", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/OldTriggerEditors.cs
+            "5e83254bb97e84795ac882692ae124ba", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRCAvatarDescriptorEditor.cs
+            "26a75599848adb449b7aceed5090e35c", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRCObjectSpawnEditor.cs
+            "ed4aad2698d3b62408e69b57c7748791", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRCObjectSyncEditor.cs
+            "8986a640e24a0754ea0aded12234b808", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRCPlayerModEditorWindow.cs
+            "792e7964a56e51f4188e1221751642e9", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRCPlayerModsEditor.cs
+            "5262a02c32e41e047bdfdfc3b63db8ff", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRCPlayerStationEditor.cs
+            "e9cbc493bbbc443fb92898aa84d221ec", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRCSceneDescriptorEditor.cs
+            "eeda995d0ceac6443a54716996eab52e", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_AvatarVariationsEditor.cs
+            "0ac7998a36f085844847acbc046d4e27", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_DataStorageEditor.cs
+            "3b63b118c0591b548ba1797e6be4292e", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_DestructibleStandardEditor.cs
+            "e19a7147a2386554a8e4d6e414f190a2", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_ObjectSyncEditor.cs
+            "4aff4e5c0d600c845b29d7b8b7965d68", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_PickupEditor.cs
+            "5c545625e0bf93045ac1c5864141c5c1", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_PlayerAudioOverrideEditor.cs
+            "0d2d4cba733f5eb4ba170368e67710d2", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_SpatialAudioSourceEditor.cs
+            "ae0e74693b7899f47bd98864f94b9311", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_SyncVideoPlayerEditor.cs
+            "3f9dccfed0b072f49a307b3f20a7e768", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_SyncVideoStreamEditor.cs
+            "3aecd666943878944a811acb9db2ace7", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_TriggerEditor.cs
+            "d09b36020f697be4d9a0f5a6a48cfa83", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_WebPanelEditor.cs
+            "764e26c1ca28e2e45a30c778c1955a47", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Components/VRC_YouTubeSyncEditor.cs
+            "e751dcaa3656a324f91244e7b795d83a", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel
+            "310a760e312f2984e85eece367bab19a", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/IVRCSdkControlPanelBuilder.cs
+            "20b4cdbdda9655947aab6f8f2c90690f", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/VRCSdkControlPanel.cs
+            "5066cd5c1cc208143a1253cac821714a", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/VRCSdkControlPanelAccount.cs
+            "d90918c7fdc97d04f918868742746f67", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/VRCSdkControlPanelAvatarBuilder.cs
+            "4c73e735ee0380241b186a8993fa56bf", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/VRCSdkControlPanelBuilder.cs
+            "c768b42ca9a2f2b48afeb1fa03d5e1bf", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/VRCSdkControlPanelBuilderAttribute.cs
+            "c7333cdb3df19724b84b4a1b05093fe0", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/VRCSdkControlPanelContent.cs
+            "f3507a74e4b8cfd469afac127fa5f4e5", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/VRCSdkControlPanelHelp.cs
+            "8357b9b7ef2416946ae86f465a64c0e0", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/VRCSdkControlPanelSettings.cs
+            "f2a720a30f1043247af7742fdfd0b8e5", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ControlPanel/VRCSdkControlPanelWorldBuilder.cs
+            "4b3d97458659fca4fa171f35f1d2d4c6", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/CreatorCompanion
+            "bb0b19250ac418c4796423d6800563fd", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/CreatorCompanion/UnityWindowClient.cs
+            "7f2e61b9b35d20342af38d897c424eaa", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/CreatorCompanion/VRCSocketClient.cs
+            "90450b11a59569b4b890f446c2078a89", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/CreatorCompanion/WatsonTcp.dll
+            "d483a8c8a6e00ee4cbe905312fc7199b", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Resources
+            "9ae7399f0cf902a41a20f3487af8322a", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Resources/SDK_Panel_Banner.png
+            "8c4423c989a97d64eabbd9375dbd3e89", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Resources/vrcSdkBottomHeader.png
+            "cb3df6568f1c9b74d8bbe0e192d2514d", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Resources/vrcSdkClDialogNewIcon.png
+            "1fc57198d6a4e5a4e9c3175ab5c609a7", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Resources/vrcSdkHeader.png
+            "e244718b600092a4bae1a08e7795305e", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Resources/vrcSdkHeaderWithCommunityLabs.png
+            "a337b85d7d3b8f0408576d7f08bf609f", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Resources/vrcSdkSplashUdon1.png
+            "19889d5e743a45f4da316fb1d760ffba", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Resources/vrcSdkSplashUdon2.png
+            "a6326e3c722b35d41a0f38805bf2eb4c", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/SDK3Compatibility
+            "93710d221addc0243ba90dd20369844b", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/SDK3Compatibility/VRCSdk3Analysis.cs
+            "35f475aef0730ab4985d96dbcefa1f9a", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ShaderStripping
+            "e634ad4b7e2c19c49bd1c3856efaf04b", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ShaderStripping/InjectStereoVariants.cs
+            "3f05fc74d61cc0c448411f8b55c918ca", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ShaderStripping/StripAndroidAvatars.cs
+            "06d01ef00e2795244aa8b5cbe879b16e", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ShaderStripping/StripPostProcessing.cs
+            "09158b5a87ea9554daafaef906ae927e", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/ShaderStripping/VRC.SDKBase.Editor.ShaderStripping.asmdef
+            "a85b501de00ea474e838e855f7639324", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Validation
+            "bc2cd907bf40cfd40a223c5aea5e4ba4", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Validation/Performance
+            "62d40cc4e8f8494695f0102c58b3ea60", // Packages/com.vrchat.base/Editor/VRCSDK/Dependencies/VRChat/Validation/Performance/SDKPerformanceDisplay.cs
+            "eed971d6ff6009c498581ccce6721201", // Packages/com.vrchat.base/Editor/VRCSDK/Plugins
+            "c99f0f9c20c10d244b376b774f4b9de2", // Packages/com.vrchat.base/Editor/VRCSDK/Plugins/VRC.SDK3.Dynamics.Contact.Editor.dll
+            "adf6ca0c885565e46a26e53348e18e99", // Packages/com.vrchat.base/Editor/VRCSDK/Plugins/VRC.SDK3.Dynamics.PhysBone.Editor.dll
+            "db2828b9e5306a143b35612a45d489c9", // Packages/com.vrchat.base/Editor/VRCSDK/Sample Assets
+            "bb15d88e30f9fae428df916379b289b2", // Packages/com.vrchat.base/Editor/VRCSDK/Sample Assets/RealtimeEmissiveGammaGUI.cs
+            "b8d0ea190b1e88846a814a03338f5c06", // Packages/com.vrchat.base/Runtime
+            "69dff30122494cd4b8ece629de8233e7", // Packages/com.vrchat.base/Runtime/VRCSDK
+            "869af56c430f8e64db9912f417580e47", // Packages/com.vrchat.base/Runtime/VRCSDK/license.txt
+            "2cdbe2e71e2c46e48951c13df254e5b1", // Packages/com.vrchat.base/Runtime/VRCSDK/version.txt
+            "3456780c4fb2d324ab9c633d6f1b0ddb", // Packages/com.vrchat.base/Runtime/VRCSDK/VRC.SDKBase.asmdef
+            "beb036b17b39a8f46b819d7e5208514a", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies
+            "1b7a8f9c612106543a1a8040e9fdfe70", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/librsync
+            "a2e4b2ce02fa7914895069e5fdbf112d", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/librsync/Blake2Sharp.dll
+            "912b2ac597cb1ad4c9bdc1a98ec15459", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/librsync/librsync.net.dll
+            "a2f0aef2b1a79004195975127d2a7c03", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Managed
+            "db74213609a3d444c8bc111a3e373878", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Managed/Collections.Pooled.dll
+            "9787e75870c1dc347a0943055c585c64", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Managed/System.Buffers.dll
+            "03440596fa1da9c4f9796a20de292254", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Managed/System.Collections.Immutable.dll
+            "c30a499f804ba2e4281452f42b3ce52d", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Managed/System.Memory.dll
+            "9b6143470b1a740428cde7079e2c7555", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Managed/System.Numerics.Vectors.dll
+            "8b3b4a8bdfbaf344686d420abd25de73", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Managed/System.Runtime.CompilerServices.Unsafe.dll
+            "d4b2b271e0873ac4eb32b7dfd4cafb7e", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Managed/System.Threading.Tasks.Extensions.dll
+            "92a6b60b2fff40d46856d7d64d897dfd", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Managed/VRC.Collections.dll
+            "99a3cc965a6419644b54113eb9983bd0", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Oculus
+            "63a46438a8152c74c980a66bfaf7b61c", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Oculus/Spatializer
+            "d082e53096d08f441bc71078ece58e73", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Oculus/Spatializer/Scripts
+            "e503ea6418d27594caa33b93cac1b06a", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Oculus/Spatializer/Scripts/ONSPAudioSource.cs
+            "ad074644ff568a14187a3690cfbd7534", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/Oculus/Spatializer/Scripts/ONSPSettings.cs
+            "ee473b0718fb35e43819a4fed630907a", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat
+            "3bc7afd8ab8c5374bbe5d4e93adac463", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Materials
+            "da07ab9b78cb0432e95e11e2cb619ea7", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Materials/BlueprintCam.mat
+            "94b649c2bd1ac4cac95049605dc5333d", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Materials/BlueprintCam.renderTexture
+            "2166f6bbfce69594fad494087eca58e8", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Materials/damageGrey.mat
+            "0fa6989a5986bc84fac94157c0aa6511", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Models
+            "e13e96301b7c8214dac6883be5b82bfa", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Models/damageSphere.fbx
+            "cbcda5ce84b6ad34d9fab76dabff48ad", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Models/Materials
+            "841c3ce718e8b61408005c1cfce6b7de", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Models/Materials/lambert2.mat
+            "9b019af4714b4bf4d9e0683084234391", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources
+            "4acdf7b3eb426480bb5acf58638bd493", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/awsconfig.xml
+            "dd5614b710e774040ab715161f7dfaca", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/endpoints.customizations.json
+            "37b4abef7420c4c7ea71dbe76757498a", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/endpoints.json
+            "be98467dc5d3c4eb1aeef22952913b0e", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/VRCCam.prefab
+            "dce0dda226bd1f147a34f9b4660f5992", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/VRCProjectSettings.prefab
+            "b14e1b78a061f8543b2f4120b5c369fa", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/VRCSDKAvatar.prefab
+            "fc887d4eeb5a941ed86bca0135b05e2b", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/VRCSDKWorld.prefab
+            "8cdc6e04f0d11184d8acb16c27cc3695", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/2FAIcons
+            "43066d8a73c579048891e3c123e252a0", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/2FAIcons/SDK_Warning_Triangle_icon.png
+            "f078e90486dd8684784c5e47c473fe95", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/CL_Icons
+            "f310c3dbad3125d4e8fc2e00bdc2acb4", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/CL_Icons/CL_Lab_Icon_256.png
+            "36349feed06587e479724a1a09c0b267", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/CL_Icons/Icon_New.png
+            "1330d5ad3ec8cb343a18f4a2dbc148c0", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/EditorUI_Icons
+            "53f9c1f34eb97ec4196ff26de5e242f7", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/EditorUI_Icons/EditorUI_Link.png
+            "bad6d2f46b6209f4e94b6a2fab7bcbb4", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons
+            "4109d4977ddfb6548b458318e220ac70", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Good_32.png
+            "644caf5607820c7418cf0d248b12f33b", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Great_32.png
+            "2886eb1248200a94d9eaec82336fbbad", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Horrible_32.png
+            "9296abd40c7c1934cb668aae07b41c69", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Medium_32.png
+            "e561d0406779ab948b7f155498d101ee", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/PerformanceIcons/Perf_Poor_32.png
+            "4d7d57371bad74d4c95276138d127122", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation
+            "6ee7e01bfeee81d46967673023437f22", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance
+            "67affaa038c4a84418ef9af616482b14", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels
+            "c8ef787823eaa004085621533241a424", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest
+            "f0f530dea3891c04e8ab37831627e702", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/AvatarPerformanceStatLevels_Quest.asset
+            "e750436d0bab192489da0debe67ee879", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/Excellent_Quest.asset
+            "b25db21b17fba3d49a7248568fdb9870", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/Good_Quest.asset
+            "31feb7417182a80469408649071d10ac", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/Medium_Quest.asset
+            "171503e8193e15447967be1e3ca1e714", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Quest/Poor_Quest.asset
+            "08d4ef81e522ab244bb72f5b8638a351", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows
+            "438f83f183e95f740877d4c22ed91af2", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/AvatarPerformanceStatLevels_Windows.asset
+            "88c46902276e7624e8adda9020bef28b", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/Excellent_Windows.asset
+            "38957d57ab5a7f145b954d20fc24b1d4", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/Good_Windows.asset
+            "65edaefdc2f87414594559cb89383b5b", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/Medium_Windows.asset
+            "595049d4e162571489f2437524d98a31", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Resources/Validation/Performance/StatsLevels/Windows/Poor_Windows.asset
+            "8b377688f9256ef409a6e02ace3605ab", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts
+            "36c0d886a26373c46be857f2fc441071", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/ApiFileHelper.cs
+            "acadc6659c5ab3446ad0d5de2563f95f", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/AudioManagerSettings.cs
+            "8d047eaa3325d654aa62ccad6f73eb93", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/CommunityLabsConstants.cs
+            "e1c693656bf5d584b87df969efeb5536", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/ContentUploadedDialog.cs
+            "d0c461e358764cd1ab95544e34b0346c", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/GameViewMethods.cs
+            "a3132e0ab7e16494a9d492087a1ca447", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/RuntimeAPICreation.cs
+            "1e5ebf65c5dceeb4c909aa7812bd2999", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/RuntimeBlueprintCreation.cs
+            "2bd5ee5d69ee0f3449bf2f81fcb7f4e3", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/RuntimeWorldCreation.cs
+            "0d49300ad532d4ae6b569b28de5b7dac", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/SceneSaver.cs
+            "c0f7ad406aeb6f64ab5c36b429a466b7", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/MaterialFallback
+            "10121679f780956408f9a434a526f553", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/MaterialFallback/FallbackMaterialCache.cs
+            "48829de75cd107e4a94337ca7cc3dd3c", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/Validation
+            "bef0a8d1d2c547119a62b7d7a5c512ea", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/Validation/ShaderValidation.cs
+            "8a90ec11b51863c4cb2d8a8cee31c2fb", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/Validation/ValidationUtils.cs
+            "9b03724cd556cb047b2da80492ea28a5", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Scripts/Validation/WorldValidation.cs
+            "c858de3dd293d29438abd1b260bed681", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Textures
+            "13d3efffb839ced4c8426a88a0c3e98c", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Textures/damageGreyNoAlpha.png
+            "8d95767408d35544c98f92ef7279b8db", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Textures/damageGRNoAlpha.png
+            "861bc2dd35aa1534d89330ffa4434b61", // Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/VRChat/Textures/VRChatBanner.png
+            "7db630bc825c4894cb53edb0e94bf7c0", // Packages/com.vrchat.base/Runtime/VRCSDK/Plugins
+            "cdfe97a8253414b4bb5dd295880489bd", // Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRC.Dynamics.dll
+            "80f1b8067b0760e4bb45023bc2e9de66", // Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRC.SDK3.Dynamics.Contact.dll
+            "2a2c05204084d904aa4945ccff20d8e5", // Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRC.SDK3.Dynamics.PhysBone.dll
+            "36a780ff1cab41e429e89d185a72b6d4", // Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRC.Utility.dll
+            "4ecd63eff847044b68db9453ce219299", // Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRCCore-Editor.dll
+            "b0e1c0f72d838fe49bfe88b987a471bd", // Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRCCore-Standalone.dll
+            "dc5cab6c932db3247aab9f50c5f3bd5f", // Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRCSDKBase-Editor.dll
+            "db48663b319a020429e3b1265f97aff1", // Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRCSDKBase.dll
+            "3a11421122aeacf459ab0b16f0863b87", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets
+            "2cd3719468f1d8d4abf574d1eed6fe13", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials
+            "68be9f0f6e5adbd44a76bf6bf69fda7b", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/BrightButton.mat
+            "9414e644b0d9d4c4cb1d863093f0284c", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/Chair.mat
+            "b6099d83d6f02e34ea589e768df4173b", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/Green.mat
+            "34348aa1b91e32f48bda8333f82f6335", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/GUI_Gradient_Ground.mat
+            "4546b0ec54086e840800d63eb723acd2", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/GUI_Zone_Holo.mat
+            "c815f7613a04b724089c206857e57c6a", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/MirrorReflection.mat
+            "7a2568654af4bef4cad7a3dfa02c31b2", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/Red.mat
+            "4a04f8d3981104848915e66f7a02ec72", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/Screen.mat
+            "0bd6280bd9d151642b2749ade484f886", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/PanoViewer
+            "1278163a2a3ba2b4cad540a862292784", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/PanoViewer/Panosphere.shader
+            "26803b57669325843a97b0ae43031082", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/PanoViewer/Sphere.mat
+            "8baf4dc2c2c13fc42a6479087b1119f4", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping
+            "2f93f26b6a6d71a47a90ca2cafa6d845", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials
+            "4876fc9dc009bbe4493553020a561611", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_black_grid.mat
+            "eae9c11350249284e8400a100179e0b2", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_blue_grid.mat
+            "1ab66d94bde8cce46bb35638099bfd31", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_grey_smooth.mat
+            "76ff537c8e1a84345868e6aeee938ab3", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_navy_grid.mat
+            "1032d41f900276c40a9dd24f55b7d420", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_navy_smooth.mat
+            "8c19a618a0bd9844583b91dca0875a34", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_pink_grid.mat
+            "fed4e78bda2b3de45954637fee164b8c", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_pink_smooth.mat
+            "5aa95b3fa56e28f43a84e301c3d19e08", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_white_grid.mat
+            "799167b062f9e2944a302eea855166b4", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_white_smooth.mat
+            "82096aab38f01cb40a1cbf8629a810ba", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_yellow_grid.mat
+            "6e1d36c4bbd37d54f9ea183e4f5fd656", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Materials/prototype_yellow_smooth.mat
+            "e8e485dd5d3676741adedb26d33bc369", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models
+            "622a87b3379022740be7e2efea3ebd33", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_block_04x04x04.fbx
+            "00718395eefb6084bb25555f962f25c0", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_coin_01x01x01.fbx
+            "df4796b594b970842b69211cb0078c5d", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_cube_02x02x02.fbx
+            "3f79402ff4ca9c54d96a09d1a77540d5", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_cube_04x04x04.fbx
+            "c09052c9b19f0ea4987bc4f4f981252f", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_cube_08x08x08.fbx
+            "16fb769c0394c36469ed40a4f35c1eec", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_floor_08x01x08.fbx
+            "080bc076ed19adb4091adca05de83d66", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_floor_4x1x4.FBX
+            "fadddc63520db414bbc9126cbf4743ad", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_floor_64x01x64.fbx
+            "ce7348d724aa0fc44aaf53391b9bae9b", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_house_16x16x24.fbx
+            "f45b6695d6226cd48abfc605723cc3ae", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_join_inner_01x06x01.fbx
+            "40384240c1c82b94db82531689571ab0", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_join_mid_04x06x01.fbx
+            "6386a10e23c45d040a22051e6ae3b70f", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_join_outer_02x06x02.fbx
+            "25712b9d3dd0eb4439390fb8fea8043e", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_pillar_01x02x01.fbx
+            "66a13889798137c498eae4b3acdafe19", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_pillar_02x08x02.fbx
+            "38a9d3cc5c1e0aa4f92ff3445b73ed7f", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_platform_02x01x02.fbx
+            "bc2ed85df3924a4458576f17e8b10057", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_platform_04x01x04.fbx
+            "879dd62cbfd65314d812354e257fc5cc", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_platform_8x1x8.FBX
+            "b9d7ac1a0f551404f8d32e1e02b64325", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_ramp_04x02x02.fbx
+            "900e53dd850c9cc4281be6fa21bdfea5", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_steps_4x2x2.FBX
+            "b5290684820a94548bedb95083785116", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/prototype_wall_8x8x1.FBX
+            "1e29d3e7fdb6bd24eb6b115598845825", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/Materials
+            "4cfb7ae289eb1e546b751d287bc1ee62", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/Materials/NavyGrid.mat
+            "22a917a65630c404e8ebe2c26a9c7d5e", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Models/Materials/PinkSmooth.mat
+            "a9e55454dcb7e384ba9a9d9ec9e84eca", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures
+            "a196fd6788131ec459bfb26012466fc1", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/GridEmissive.png
+            "efaaea7f6a25a4d4fafa9fce85bf947f", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/prototype_black_dff.png
+            "3cae02495b88d2d4fbf19382b7993691", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/prototype_blue_dff.png
+            "33a18574a1737ab42a75137c3b83c9be", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/prototype_white_dff.png
+            "c3edc74ae8207fd45a93c4ed8ee27567", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/SwatchMauveAlbedo.png
+            "86e4aa9207c9e2740b6ace599d659c05", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/SwatchNavyAlbedo.png
+            "a336ccf90791f9841b7e680c010d1e88", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/SwatchNavyDarkAlbedo.png
+            "8b939c5b46fae7e49af7d85f731ba4ec", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/SwatchOrangeAlbedo.png
+            "580615edf5e29d245af58fc5fe2b06ac", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/SwatchPinkDAlbedo.png
+            "590546bcbd472d94e874f6e0c76cc266", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/SwatchTealAlbedo.png
+            "9c4d7ee42c7d4f944b2ce9d370fa265c", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/SwatchTurquoiseAlbedo.png
+            "9d0b29cecf2678b41982d2173d3670ff", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/SwatchWhiteAlbedo.png
+            "b4646ae63b0bcca40b1bdde3b87e01bf", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Prototyping/Textures/SwatchYellowAlbedo.png
+            "0d7c2bce0123e904187e8a2d38c37506", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders
+            "693137b858e4dc64c83be531351f45e6", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mirror.shader
+            "9788d723ed7eac946a9a599e4a6ba940", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Video-RealtimeEmissiveGamma.shader
+            "5f8fef09682fab74fb7a29d783391edb", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/VRChat-Sprites-Default.shader
+            "9ae8ad653e1d98940bbc79866b9170f3", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/VRChat-Sprites-Diffuse.shader
+            "c8d9c9985ef32414ca6b107693e25eaa", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile
+            "f8c1f8ac363df824899534a0b30eef00", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-BumpedDiffuse.shader
+            "528d55c4e8adab14b974ca665ed1b996", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-BumpedMappedSpecular.shader
+            "584dc70fbb9834e48beb29e3206e3ca0", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-BumpedSpecular.shader
+            "2dcd9e0568e0a6f45b92c60ba2eb16a0", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Diffuse.shader
+            "b1f7ecc80417c414b9d62ce541d5bcbf", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Lightmapped.shader
+            "3ad043b7f9839cb48a75a9238d433dec", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-MatCapLit.shader
+            "9200bec112b65ec4fbbbd33fa89c20f4", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Particle-Add.shader
+            "8b39b95ac85682040beff730e0cfc77a", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Particle-Alpha.shader
+            "d5b89f0c74ccf5049ba803c14a090378", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Particle-Multiply.shader
+            "c0d3cb006bb294142bef136f492f2568", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Skybox.shader
+            "0b7113dea2069fc4e8943843eff19f70", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-StandardLite.shader
+            "affc81f3d164d734d8f13053effb1c5c", // Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-ToonLit.shader
 
             #endregion
 
-            #region Udon
+            #region VRCSDK3 - Worlds
 
-            "45115577ef41a5b4ca741ed302693907",  // Assets/Udon/UdonBehaviour.cs
-            "530bdb25a3862ff4c8be42f678c53527",  // Assets/Udon/UdonManager.cs
-            "473737f63e15e204aa3a3df7a3a173e3",  // Assets/Udon/version.txt
-            "3c1bc1267eab5884ebe7f232c09ee0d9",  // Assets/Udon/VRC.Udon.asmdef
-            "84de2da7fe8ad8e439c084731189bc12",  // Assets/Udon/Editor/UdonBehaviourEditor.cs
-            "66ebdaa27f6d2d54cbb62abddc493674",  // Assets/Udon/Editor/UdonEditorManager.cs
-            "627c4d5cd580ddf41bd320e784fe8b9d",  // Assets/Udon/Editor/VRC.Udon.Editor.asmdef
-            "8b6535096cfa29340897276abbdd015f",  // Assets/Udon/Editor/External/VRC.Udon.Compiler.dll
-            "585dd63e377866248b16bdba915820ed",  // Assets/Udon/Editor/External/VRC.Udon.EditorBindings.dll
-            "b335798a4f28bec40ba9b3d4a15acee7",  // Assets/Udon/Editor/External/VRC.Udon.Graph.dll
-            "21dcba1a47cc8c84381629950b692129",  // Assets/Udon/Editor/External/VRC.Udon.UAssembly.dll
-            "161140ecae894b84ba7bdd6e44ff4371",  // Assets/Udon/Editor/External/VRC.Udon.VRCGraphModules.dll
-            "19cff77330d183441a69ff6c69e07629",  // Assets/Udon/Editor/External/VRC.Udon.VRCTypeResolverModules.dll
-            "cac80b40f57c41d4b941dc5059271583",  // Assets/Udon/Editor/GraphModules/VRCInstantiateNodeRegistry.cs
-            "e1b5b45f24b268b42826fc5c5497dc15",  // Assets/Udon/Editor/ProgramSources/SerializedUdonProgramAssetEditor.cs
-            "0e5ced9511d591140b191bbd9e948e61",  // Assets/Udon/Editor/ProgramSources/Attributes/UdonProgramSourceNewMenuAttribute.cs
-            "22203902d63dec94194fefc3e155c43b",  // Assets/Udon/Editor/ProgramSources/UdonAssemblyProgram/UdonAssemblyProgramAsset.cs
-            "3df823f3ab561fc43bcb81286e14b91d",  // Assets/Udon/Editor/ProgramSources/UdonAssemblyProgram/UdonAssemblyProgramAssetEditor.cs
-            "3c0638314c289c24193b47d1c53c9fca",  // Assets/Udon/Editor/ProgramSources/UdonAssemblyProgram/UdonAssemblyProgramAssetImporter.cs
-            "4f11136daadff0b44ac2278a314682ab",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UdonGraphProgramAsset.cs
-            "31d6811854f59254aa1a263a8d566eb2",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UdonGraphProgramAssetEditor.cs
-            "57422d3fdb0cc124189c68f87b7157cd",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/UdonGraphExtensions.cs
-            "e2f2300f99ce0ea4a8d9a20b464384df",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/TypeExtension.cs
-            "9214873dab0ea8a4b91861cd5a04dae3",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraph.cs
-            "f166d8f1c152ef34899019ab9a4fd0f2",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraphElementData.cs
-            "54dd824c6c614b94183d92710efe4f5f",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraphStatus.cs
-            "87e2044d3bcb715499ac68cc7380a9ed",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraphViewSettings.cs
-            "c6f017dc2674fec4da54a57b2655a948",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraphWindow.cs
-            "5dcd92112af21784ba5bf6383abab768",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/UdonParameterField.cs
-            "70616b8b964e3664780fc03f65f27f4f",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/UdonParameterProperty.cs
-            "fddc146e8502d7b49a294b6264d66dfd",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/UdonProgramSourceView.cs
-            "e5786fc577943ae45953c6f54c97116b",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/UdonWelcomeView.cs
-            "aabdd863f82551d40bd3a1b0835d2fc3",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/VideoPlayerElement.cs
-            "469db50616185d04e8a46dcd75db12d2",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/GraphElementExtension.cs
-            "f4f0ade55ae13b6468a765826f1f2540",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonArrayInspector.cs
-            "7e5916b8dd19e4445a9156a457b82ee4",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonComment.cs
-            "ba3ecc4c46929404d8c2ec920743b823",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonGraphElement.cs
-            "1b8045222a10ce04b815642b9cd5ca17",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonGroup.cs
-            "b006d67642298f04e895b6709ef12429",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonMinimap.cs
-            "dcd657bc1dcf357448d27bcfa8c5dc36",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonNode.cs
-            "8f83d1d3578dd28498c71a980bca86dd",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonPort.cs
-            "c5cfbbfcd7bb5ad4487f1f9388a3a168",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonStackNode.cs
-            "2d0a4730c5f61b247b27b54f280300b5",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonVariablesBlackboard.cs
-            "6581176c97993bb40976acff208bd0b1",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonFocusedSearchWindow.cs
-            "b721120e6c1d320448a55fe87a7de824",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonFullSearchWindow.cs
-            "e94c084f399869b42a21244fd07778c4",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonPortSearchWindow.cs
-            "6a6c453fae11b5349a33399e258d1578",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonRegistrySearchWindow.cs
-            "e5a10bb1987c27944bd08a88119b2844",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonSearchManager.cs
-            "d825ed3ba6aa7f14294e73efefc217d0",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonSearchWindowBase.cs
-            "16fc7a7a059deeb458fdcdf719b467a4",  // Assets/Udon/Editor/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonVariableTypeWindow.cs
-            "264ec3c8a1d423f42a144da0df6c5ebe",  // Assets/Udon/Editor/ProgramSources/UdonProgram/UdonProgramAsset.cs
-            "41d70977fa7936441afe41442f1862b2",  // Assets/Udon/Editor/ProgramSources/UdonProgram/UdonProgramAssetEditor.cs
-            "9e84f8ee45862f04ca6b9f8d5c7f5897",  // Assets/Udon/Editor/Resources/CornerResize.png
-            "632470b93f35ec64ab6e3efd639c986c",  // Assets/Udon/Editor/Resources/DarkButtonBG.png
-            "d4ca7f47895ab36408e28f4f742fba99",  // Assets/Udon/Editor/Resources/DropdownBG.png
-            "f43fd332539599c47b3bb05ea38d5d0d",  // Assets/Udon/Editor/Resources/ToolbarBG.png
-            "5cbfe49b858635b44844a178cb934b68",  // Assets/Udon/Editor/Resources/ToolbarButtonBG.png
-            "7dade49b2f58f734f8db0983d8e7fb60",  // Assets/Udon/Editor/Resources/UdonChangelog.uxml
-            "927841c571a405846b3442bc0aa56220",  // Assets/Udon/Editor/Resources/UdonFlowSlot.png
-            "3803fec4c7b065042891595e749524cc",  // Assets/Udon/Editor/Resources/UdonFlowSlotFilled.png
-            "7c75c00422f12124faed19bfb8dd96df",  // Assets/Udon/Editor/Resources/UdonFlowSlotFilledLight.png
-            "610088fc92e5fc64b8c7f9e9c51f2939",  // Assets/Udon/Editor/Resources/UdonFlowSlotLight.png
-            "d47fd176596dfbe4e9e78964b40c93ee",  // Assets/Udon/Editor/Resources/UdonGraphNeonStyle.uss
-            "815baa9989198624aa5fec5ecdb42bd0",  // Assets/Udon/Editor/Resources/UdonGraphStyle.uss
-            "0e2cfcbd717e75441b108d3ad9de2d29",  // Assets/Udon/Editor/Resources/UdonLogo.png
-            "8cf68553c5a4bb140a6341072891aa88",  // Assets/Udon/Editor/Resources/UdonLogoAlpha.png
-            "d0608d33a4043b2499adb1fee18f2a64",  // Assets/Udon/Editor/Resources/UdonLogoAlphaWhite.png
-            "17102758d03099542afc7a1808745eaf",  // Assets/Udon/Editor/Resources/UdonNodeAccent.png
-            "c0230adfeb2abe242b8d64c7e3bd2adc",  // Assets/Udon/Editor/Resources/UdonNodeActiveBackground.png
-            "8289cc16393cd3040a9920e71bfe10bc",  // Assets/Udon/Editor/Resources/UdonNodeActiveBackgroundLight.png
-            "f47842ead2f80fa46ab6e5bbde409193",  // Assets/Udon/Editor/Resources/UdonNodeBackground.png
-            "c9235631e37566447ae4567624755326",  // Assets/Udon/Editor/Resources/UdonNodeBackgroundLight.png
-            "2d2675a75fea1d2438859bdb320d544d",  // Assets/Udon/Editor/Resources/UdonNodeInlay.png
-            "12f29a8be9fc52640b40f6ffa59336c6",  // Assets/Udon/Editor/Resources/UdonNodeInlayLight.png
-            "1ed47570201e1854d9e455e38eecbcf7",  // Assets/Udon/Editor/Resources/UdonSettings.uxml
-            "91b7c8d7d899ec04e9568e9385aba34d",  // Assets/Udon/Editor/Resources/UdonSlot.png
-            "3a1ab76e09365f14cab0665b40da8843",  // Assets/Udon/Editor/Resources/UdonSlotFilled.png
-            "add07ab72e2fc3d4d81143ab77d121f5",  // Assets/Udon/Editor/Resources/UdonSlotFilledLight.png
-            "1badb339ed4f23541b6db8a9420aeea9",  // Assets/Udon/Editor/Resources/UdonSlotLight.png
-            "37bd184e5e9b13945840f70329f2e0f6",  // Assets/Udon/Editor/Resources/videoStill.png
-            "c041fa712f66a5d4f8525cd447dc8b29",  // Assets/Udon/Editor/TypeResolvers/UdonBehaviourTypeResolver.cs
-            "02e7e7f5f9fc2c24ab3af0b8780f3623",  // Assets/Udon/Editor/UnityEditorTests/UICompilerTests.cs
-            "3c3c5a3876474c648a47177c1875f447",  // Assets/Udon/Editor/UnityEditorTests/UnityEditorTests.asmdef
-            "80455fb15755bfd47b1803c8fe84e16e",  // Assets/Udon/External/VRC.Udon.ClientBindings.dll
-            "a5e7b2f5005f10e44b082e7c18871cc6",  // Assets/Udon/External/VRC.Udon.Common.dll
-            "9d86dc4a513809149af3856eab191a3d",  // Assets/Udon/External/VRC.Udon.Security.dll
-            "ecb1eec40b5e47047891ee46e739186a",  // Assets/Udon/External/VRC.Udon.VM.dll
-            "92886df353bf1f14489cf2c4578e58af",  // Assets/Udon/External/VRC.Udon.VRCWrapperModules.dll
-            "a3a3dda899277cc4ea6aebe18c6b5736",  // Assets/Udon/External/VRC.Udon.Wrapper.dll
-            "bf61d954ecb803046953c666facfb904",  // Assets/Udon/ProgramSources/SerializedUdonProgramAsset.cs
-            "2fad63ba312d5f44a8ab215c3f5b18f1",  // Assets/Udon/ProgramSources/Abstract/AbstractSerializedUdonProgramAsset.cs
-            "7fa64b2d7df72fb4cbf7898a400e86ef",  // Assets/Udon/ProgramSources/Abstract/AbstractUdonProgramSource.cs
-            "b1d0b8aa8084bcd44a572d524d7a31bb",  // Assets/Udon/Serialization/Formatters/UdonGameObjectComponentReferenceFormatter.cs
-            "f2626352b2a60eb41adc3580ae44c750",  // Assets/Udon/Serialization/Formatters/UdonProgramFormatter.cs
-            "ec4e6da38017fe7df076afceb30fa17c",  // Assets/Udon/Serialization/OdinSerializer/LICENSE
-            "2105a6c0e5c0955d2d4a704c5e9c9b8f",  // Assets/Udon/Serialization/OdinSerializer/Version.txt
-            "f70a94b0bedfa8ec50ed757f72032810",  // Assets/Udon/Serialization/OdinSerializer/VRC.Udon.Serialization.OdinSerializer.asmdef
-            "bfaf18dca1f68cc99ebeb0b862179265",  // Assets/Udon/Serialization/OdinSerializer/Config/GlobalSerializationConfig.cs
-            "4ac1e1612275111bd50db8a3de8ba9c4",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/BaseDataReader.cs
-            "501a7e1356f5fdc8e9bbefcd61a56490",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/BaseDataReaderWriter.cs
-            "9638b18c6b6b6532b3b3cd3a73fefc2a",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/BaseDataWriter.cs
-            "dc1fe25e670cf981ed66b3e85c3e4249",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/IDataReader.cs
-            "af6696e41807b3c3f9a1d73667f76701",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/IDataWriter.cs
-            "ee0465a1838833eb878447b34339d4f4",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Binary/BinaryDataReader.cs
-            "1bc9e2503afdd0290574ebc14cf4a16d",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Binary/BinaryDataWriter.cs
-            "1361420bc2b384389a065fd2fe59fb22",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Binary/BinaryEntryType.cs
-            "7a3a6dce9e0b8317b3804b35f48f6a97",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Json/JsonConfig.cs
-            "2ecc39ef0dc55ec10f83bb7eefd4f1db",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Json/JsonDataReader.cs
-            "3e05b98a26be61fa9203d4a45bfc1e95",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Json/JsonDataWriter.cs
-            "aad0a34e801ae645b359e4800ef7f636",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Json/JsonTextReader.cs
-            "6a0f5e01b82ae0763f6f907157a2c9c8",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/SerializationNodes/SerializationNode.cs
-            "eab5938e837a8de93ce64c25399edde6",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/SerializationNodes/SerializationNodeDataReader.cs
-            "9321fb650525f4bed18119d187111569",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/SerializationNodes/SerializationNodeDataReaderWriterConfig.cs
-            "dd54f07c359d141095a031192c5ca084",  // Assets/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/SerializationNodes/SerializationNodeDataWriter.cs
-            "0bdecd79f568c8a3252bb5a9f3e2acdc",  // Assets/Udon/Serialization/OdinSerializer/Core/FormatterLocators/ArrayFormatterLocator.cs
-            "c4228cdbba89e2a5d52357b998c3387d",  // Assets/Udon/Serialization/OdinSerializer/Core/FormatterLocators/DelegateFormatterLocator.cs
-            "cf715e98fa96d74c81b4d3f4491d2592",  // Assets/Udon/Serialization/OdinSerializer/Core/FormatterLocators/FormatterLocator.cs
-            "d35d0d1eb290f5d00e273d65e5db09d7",  // Assets/Udon/Serialization/OdinSerializer/Core/FormatterLocators/GenericCollectionFormatterLocator.cs
-            "f2a9beaeecdd6eb929ddb049d7846a14",  // Assets/Udon/Serialization/OdinSerializer/Core/FormatterLocators/IFormatterLocator.cs
-            "cdd12b278851bfdc68ca0d9e1e4f2d28",  // Assets/Udon/Serialization/OdinSerializer/Core/FormatterLocators/ISerializableFormatterLocator.cs
-            "876ae9a404abe412e663fd9bc03d3525",  // Assets/Udon/Serialization/OdinSerializer/Core/FormatterLocators/SelfFormatterLocator.cs
-            "00e10f526d476731ebc596ceb66271a6",  // Assets/Udon/Serialization/OdinSerializer/Core/FormatterLocators/TypeFormatterLocator.cs
-            "9aaf14140a26e04b861b027d5ddb8fb6",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/ArrayFormatter.cs
-            "3f5dc00eb17e568de42119a7f0f30ee8",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/ArrayListFormatter.cs
-            "9598679c29f3e3696941746c26f1ccf8",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/BaseFormatter.cs
-            "dff51bfb9b4d71aa78b3e5c8fec8c924",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/DateTimeFormatter.cs
-            "3480954e7eecdc9745c1d08721b2f8b3",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/DateTimeOffsetFormatter.cs
-            "4f17b17e986ae6f3be6a2ea1b716fcaf",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/DelegateFormatter.cs
-            "4402da708267c579874c808a813bfe62",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/DerivedDictionaryFormatter.cs
-            "b80567603fe814a8b4341584f8c3b4a6",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/DictionaryFormatter.cs
-            "5c21ee7e54dff531da57563e2f81fff5",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/DoubleLookupDictionaryFormatter.cs
-            "54578488936f8484c97ba7c52bfb0563",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/EasyBaseFormatter.cs
-            "e226537cbfa910681132da3718f41c34",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/EmittedFormatterAttribute.cs
-            "149c482b2ab9c601b8bc2ecc20bbd8d9",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/EmptyTypeFormatter.cs
-            "b7da6bf97199e0bb743f7639c17112ac",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/FormatterEmitter.cs
-            "06ccb8250c692f2695d28bfd6bcd4273",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/GenericCollectionFormatter.cs
-            "f1eaa1b43658215b6d81013928eac19e",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/HashSetFormatter.cs
-            "0fcb040f1c493dc2a5224e446be8b3c9",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/IFormatter.cs
-            "5cae1c5d1116a090d70b6d0289061d21",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/KeyValuePairFormatter.cs
-            "ba4ee6777a44f6e9a8e2e0a222c0f7db",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/ListFormatter.cs
-            "21078ce134ce87231526dee77088e7ab",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/MethodInfoFormatter.cs
-            "ae604bc0ef4ef9938100804f05decb21",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/MinimalBaseFormatter.cs
-            "dc1b5b3148988d0d4fc2dab60a5c146c",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/MultiDimensionalArrayFormatter.cs
-            "f9ea00de8051ca957d994e11630671d9",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/NullableFormatter.cs
-            "6b6a62ea2fe943a4b261f832e8a1f3dd",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/PrimitiveArrayFormatter.cs
-            "8045e4edca7c27f5b16bd90d7101c935",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/QueueFormatter.cs
-            "15fa864c9e3363220ceac4ec93c7f5b8",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/ReflectionFormatter.cs
-            "dde0095df6bea6624dfa72a31127bc48",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/ReflectionOrEmittedBaseFormatter.cs
-            "12a47dd574302b77ba3c5ac05cd04541",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/SelfFormatterFormatter.cs
-            "0f59404c810d015ed87c7e1557188435",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/SerializableFormatter.cs
-            "087303d0d43cf7ce5af060a0cc0b5d38",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/StackFormatter.cs
-            "4b0676b49f03cc50a1e532cf23e3988e",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/TimeSpanFormatter.cs
-            "c6529471b992ba4080a123aa504ef9ea",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/TypeFormatter.cs
-            "4a7c8e71a3ef1124db10e72af34e1724",  // Assets/Udon/Serialization/OdinSerializer/Core/Formatters/VersionFormatter.cs
-            "23fa5d3fed3b4b9de502257a594b00de",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/AllowDeserializeInvalidDataAttribute.cs
-            "92726834b08002d525b86fbb012e184f",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/AlwaysFormatsSelfAttribute.cs
-            "72783638708ea644ba5c3e1b91f827f6",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/ArchitectureInfo.cs
-            "ad4e17831e9503c1f11149997c609477",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/Buffer.cs
-            "e7e73146f1e861c27c5608bff4142402",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/CachedMemoryStream.cs
-            "4fd6ff4077bbbef9b366d8ffd9236173",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/CustomFormatterAttribute.cs
-            "e02123fad495d06f2a89e5335f00126c",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/CustomGenericFormatterAttribute.cs
-            "97e9e01eb36fd43879b166b6b3c2469b",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/CustomLogger.cs
-            "95bb5531b6c1d1a5eab8400ea1bd6167",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/CustomSerializationPolicy.cs
-            "c2a40a3e6a114e5a50c0af209b8ae35e",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/DataFormat.cs
-            "0bd9ab6cf3bd913588b6652279b7a6ba",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/DefaultLoggers.cs
-            "996e793dcc0920d2590cb61f0761d498",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/DefaultSerializationBinder.cs
-            "c79df97337d89089be40beb2e272df0b",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/DeserializationContext.cs
-            "ae849a3e6d277006f3b4dd58a5765955",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/EmittedAssemblyAttribute.cs
-            "3b06b106636f38afbb25ddd11e0c597c",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/EntryType.cs
-            "c73435dff291e72c0d9ce55b59c39145",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/ErrorHandlingPolicy.cs
-            "df06475ac5299f402ca1bdee3cf7e702",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/ExcludeDataFromInspectorAttribute.cs
-            "08528593c8dd764b6d928dcee6daca9f",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/FormatterLocationStep.cs
-            "30194d27b77855bf09b9af809a761ca5",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/FormatterUtilities.cs
-            "32f94aca65b8d09ddd7b3db72e08db3f",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/IAskIfCanFormatTypes.cs
-            "7ef6b6dd5e3be66c3a66753cc7e799de",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/IExternalGuidReferenceResolver.cs
-            "d1eaa1a505a876bebb9cad40d01989e9",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/IExternalIndexReferenceResolver.cs
-            "9414cf6a3ea9a51afcf648fe9ea02bed",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/IExternalStringReferenceResolver.cs
-            "8bab352682356b8a2b02842520a68a11",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/ILogger.cs
-            "106ca47adfa52732b129015337a1c8cd",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/ISelfFormatter.cs
-            "90bcbfdc0286ca48d51fc578a1e15b8f",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/ISerializationPolicy.cs
-            "7de3f23805ad9d4b3d033eef45e3b59b",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/LoggingPolicy.cs
-            "10eb7be2b7c363367c46bc5699a361a8",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/NodeInfo.cs
-            "766bbafe64ad16f63af4b81eb430e380",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/OdinSerializeAttribute.cs
-            "3db8c00661ec222984427ab12295940f",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/PrefabModification.cs
-            "23ceed712f987034deb8e92c561a1d3b",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/PrefabModificationType.cs
-            "96fec6c04f13e378def42ea5ad5dc940",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/PreviouslySerializedAsAttribute.cs
-            "989e99cd5b8f922edc1b13bbc22f4289",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/ProperBitConverter.cs
-            "82702718797409c332f9174bdad57bbc",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/RegisterFormatterAttribute.cs
-            "a000ffc63858a974eb63d9ef6f91adac",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/RegisterFormatterLocatorAttribute.cs
-            "dca124a461001ad1494664ed95539612",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/SerializationAbortException.cs
-            "eba33c8e77e2084c660af46be1b547dd",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/SerializationConfig.cs
-            "1e93880e733f9a6a084cf4061634e7fb",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/SerializationContext.cs
-            "67a19021ff9e6b27d8e9257ad075055a",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/SerializationPolicies.cs
-            "08607b6e9c39ec19c1b61341583c2f3e",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/SerializationUtility.cs
-            "bc69d8fd9d15913a491a45d1e040faf6",  // Assets/Udon/Serialization/OdinSerializer/Core/Misc/TwoWaySerializationBinder.cs
-            "0e8d8c5a97fdc322a8b8471aaf02f469",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/BooleanSerializer.cs
-            "8aa9f52771b0e4e6f8f0c438a4f0430b",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/ByteSerializer.cs
-            "d44d1ae83013328d7b855275fa1cfad7",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/CharSerializer.cs
-            "5a2a43b51cef79fd0e85028650394b55",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/ComplexTypeSerializer.cs
-            "50c67937d611e4749188b838e4cff5dc",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/DecimalSerializer.cs
-            "9fc4716f683bc313c24bfa537cdd97f6",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/DoubleSerializer.cs
-            "7a5d23b139cd8e692702aa431b071d07",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/EnumSerializer.cs
-            "19dcfa9f6a40979fc2b6c3ae0f24b67c",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/GuidSerializer.cs
-            "d280b44f7c75a9a18484a84745998130",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/Int16Serializer.cs
-            "eafebb70813195e03b1ba467931eb686",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/Int32Serializer.cs
-            "afe45c48508431a62aba886d943d8501",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/Int64Serializer.cs
-            "6ccaffe3090611c2ada67d49cf834771",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/IntPtrSerializer.cs
-            "88f3ec418fdfdd7eabd6134f1de91991",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/SByteSerializer.cs
-            "29261eaea99f2d34c42cdc0b04f95daa",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/Serializer.cs
-            "7aa356971fd0b66eb59875b278fa7f03",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/SingleSerializer.cs
-            "85996580a8691185d06ec342c5c43747",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/StringSerializer.cs
-            "3936194ea64890e11a7db8474eb0bbcf",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/UInt16Serializer.cs
-            "f30e426f88b471e498dd1853b7bbaee6",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/UInt32Serializer.cs
-            "f55c085325e12800428d01e3535cb297",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/UInt64Serializer.cs
-            "0ee9dd19c234e4b16c835b9188459e36",  // Assets/Udon/Serialization/OdinSerializer/Core/Serializers/UIntPtrSerializer.cs
-            "94a6cc2044fcd2cb317b1cdb1e8fcdaf",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/AOTSupportScanner.cs
-            "f5fe153775edbadfa2b659e0e35dc881",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/AOTSupportUtilities.cs
-            "aaf2f90207414827b53b85dae0eae82e",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/OdinPrefabSerializationEditorUtility.cs
-            "de5584f66ccc5e072681a310c5987b8c",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/UnityReferenceResolver.cs
-            "f670c1f9aa9ab0c5988e81802c005767",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs
-            "9eb15f2339819bb651c7872d73c89776",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/UnitySerializationUtility.cs
-            "864fb1c011715f9df2998d71ac8716f6",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/BaseDictionaryKeyPathProvider.cs
-            "ef6f699f176c2dfdea788982526f989a",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/DictionaryKeyUtility.cs
-            "b513c156933d8b833ccd40d717bf7e2b",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/IDictionaryKeyPathProvider.cs
-            "54f653ed4a4e15c07057283c11dce4d9",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/RegisterDictionaryKeyPathProviderAttribute.cs
-            "0405ef103432161dff609e75f71f3f55",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/Vector2DictionaryKeyPathProvider.cs
-            "1d61e235c606c1c9d7269f7e68471e38",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/Vector3DictionaryKeyPathProvider.cs
-            "51bb2cf369b5ea90948a20e4f2ebae48",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/Vector4DictionaryKeyPathProvider.cs
-            "3d2976bd61cccf62b11b4d3f02762465",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/AnimationCurveFormatter.cs
-            "6ff1b29d64402a15d020739becd8661e",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/BoundsFormatter.cs
-            "0878ec68b6ab3c9ebc365b6d139e4840",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/Color32Formatter.cs
-            "25e35581ce6d1febd9ac41864a76ecdb",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/ColorBlockFormatter.cs
-            "484768ba343a6a05522c29d81a4ce61d",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/ColorFormatter.cs
-            "c3968bef792c5668478ac01be7645b30",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/CoroutineFormatter.cs
-            "b5b415c00da8157ac50b8f5543f0b1d9",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/GradientAlphaKeyFormatter.cs
-            "8936a3e43078251682f18923139f7aee",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/GradientColorKeyFormatter.cs
-            "d5b54660d5342fd45e2e43775538879d",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/GradientFormatter.cs
-            "68ac0b27f571616d3ed26c23eef40c8c",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/KeyframeFormatter.cs
-            "afc596cd95a1ac316024d16f6fec6536",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/LayerMaskFormatter.cs
-            "558323987bf9b75943382a5faa093ee3",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/QuaternionFormatter.cs
-            "196809b991e565a48e3d4ad08cb30b5e",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/RectFormatter.cs
-            "c934302874ac3315ed322feefefa1f9c",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/UnityEventFormatter.cs
-            "70c675a7b4c71c685ee39d745ccb058b",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/Vector2Formatter.cs
-            "da2644647af1368176103aa87de1dbaf",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/Vector3Formatter.cs
-            "60afa8ede3981c383782a01ddc55e943",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/Vector4Formatter.cs
-            "ff1ca109149d83b03b39644f8045275e",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/IOverridesSerializationFormat.cs
-            "8942002e9ac41c2bfd27c4fbedf93f09",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/IOverridesSerializationPolicy.cs
-            "7279ec8ad7837f13ec833193ab4282cc",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/ISupportsPrefabSerialization.cs
-            "ea095023abd05a7af0da4166dcefdee8",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializationData.cs
-            "c3cecb461cebbc940ede3b5ddb72382e",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedBehaviour.cs
-            "56b88cfe9935184fe250bda018144f26",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedComponent.cs
-            "d1b9fa6342beb9fdfc2c4bc1d8e5e971",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedMonoBehaviour.cs
-            "6cb9325ffffee5d6ed94d71590b4049a",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedScriptableObject.cs
-            "eefcd68a84ee7903b08c6254c17fafe3",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedStateMachineBehaviour.cs
-            "d62f7ab4e5aa075b819d6c71e929686b",  // Assets/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedUnityObject.cs
-            "78ce67c0b3c1975c520a08d1ff9fd24e",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/FieldInfoExtensions.cs
-            "068f5645a5c3f9ce36a580ec57e775d1",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/GarbageFreeIterators.cs
-            "0f84614827ff91701149564447a3932b",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/LinqExtensions.cs
-            "62088a9c188c943eb4035de16eb6ec32",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/MemberInfoExtensions.cs
-            "63a9a0384a6fe66fb04f82f325895b30",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/MethodInfoExtensions.cs
-            "1df9513f03131466eecad22d1b19c4d8",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/Operator.cs
-            "da8aea12015a2df5402c9e2d4f1cec5c",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/PathUtilities.cs
-            "7f13450d6fd82372ffa7ee075a8eb4c9",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/PropertyInfoExtensions.cs
-            "b554cbd9469011b544a2d92ae85a3b60",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/StringExtensions.cs
-            "a6a172cef14a88c7fb714df37bbecedb",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/TypeExtensions.cs
-            "eb77f5278e425e91b71e186df29a5f16",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Extensions/UnityExtensions.cs
-            "787c97af872124f748a4a9b366f325d3",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/AssemblyImportSettingsUtilities.cs
-            "146b6bd1e3b0f0926205abf839ec9e6f",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/Cache.cs
-            "1bd625694c606aab0cb7895da4911c6a",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/DoubleLookupDictionary.cs
-            "bda92ec6156282448e883bf8f6a781fd",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/EmitUtilities.cs
-            "570028979953bd2c60b7e89ff7cef92e",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/FastTypeComparer.cs
-            "42e5d977e21c7a6524213a8a7dbee24a",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/Flags.cs
-            "783316da32d87acfae14953e341732a3",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/ICacheNotificationReceiver.cs
-            "1bc635f3755c60fe69f1895dd53974e2",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/ImmutableList.cs
-            "000592e93b119574207ea3bf59f659e4",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/MemberAliasFieldInfo.cs
-            "c1e85c1ef449ccb40e05f0afd3dd717f",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/MemberAliasMethodInfo.cs
-            "00bf47593f2a330c1bb41552bdc1233f",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/MemberAliasPropertyInfo.cs
-            "5ad884ed6013d621a310ceb4c954f62a",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/ReferenceEqualityComparer.cs
-            "0fe3820fb4651e200f17905245ec8be2",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/UnityVersion.cs
-            "93b4d01199b118896c756b09a9206fc0",  // Assets/Udon/Serialization/OdinSerializer/Utilities/Misc/UnsafeUtilities.cs
-            "f6cfa3d8ec4f885468d17f5b023d2529",  // Assets/Udon/WrapperModules/ExternVRCInstantiate.cs
+            "a95597e57a6ebb3d2cbee07d3db3a72b", // Packages/com.vrchat.worlds
+            "78d28f00a65b83742b5e85510114747e", // Packages/com.vrchat.worlds/license.txt
+            "067f9b5cc16a52649985a5947e355556", // Packages/com.vrchat.worlds/package.json
+            "5e9fbaa99aaf04a47a57992270bfe6eb", // Packages/com.vrchat.worlds/Editor
+            "4043032f88a8ca14ab0daa7f59d4dc56", // Packages/com.vrchat.worlds/Editor/Udon
+            "84de2da7fe8ad8e439c084731189bc12", // Packages/com.vrchat.worlds/Editor/Udon/UdonBehaviourEditor.cs
+            "66ebdaa27f6d2d54cbb62abddc493674", // Packages/com.vrchat.worlds/Editor/Udon/UdonEditorManager.cs
+            "5ce0cc0dd464fa94bb634ed46d88c48b", // Packages/com.vrchat.worlds/Editor/Udon/UdonImportPostProcessor.cs
+            "627c4d5cd580ddf41bd320e784fe8b9d", // Packages/com.vrchat.worlds/Editor/Udon/VRC.Udon.Editor.asmdef
+            "805b570a07431b24c9ced8636baf4e67", // Packages/com.vrchat.worlds/Editor/Udon/External
+            "8b6535096cfa29340897276abbdd015f", // Packages/com.vrchat.worlds/Editor/Udon/External/VRC.Udon.Compiler.dll
+            "585dd63e377866248b16bdba915820ed", // Packages/com.vrchat.worlds/Editor/Udon/External/VRC.Udon.EditorBindings.dll
+            "b335798a4f28bec40ba9b3d4a15acee7", // Packages/com.vrchat.worlds/Editor/Udon/External/VRC.Udon.Graph.dll
+            "21dcba1a47cc8c84381629950b692129", // Packages/com.vrchat.worlds/Editor/Udon/External/VRC.Udon.UAssembly.dll
+            "161140ecae894b84ba7bdd6e44ff4371", // Packages/com.vrchat.worlds/Editor/Udon/External/VRC.Udon.VRCGraphModules.dll
+            "19cff77330d183441a69ff6c69e07629", // Packages/com.vrchat.worlds/Editor/Udon/External/VRC.Udon.VRCTypeResolverModules.dll
+            "678490760db5c0e48ae774b14b75699b", // Packages/com.vrchat.worlds/Editor/Udon/GraphModules
+            "cac80b40f57c41d4b941dc5059271583", // Packages/com.vrchat.worlds/Editor/Udon/GraphModules/VRCInstantiateNodeRegistry.cs
+            "793c2f185ce686b4a952dc038f986c79", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources
+            "e1b5b45f24b268b42826fc5c5497dc15", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/SerializedUdonProgramAssetEditor.cs
+            "e809894c9789ed4488974b1f99d92640", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/Attributes
+            "0e5ced9511d591140b191bbd9e948e61", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/Attributes/UdonProgramSourceNewMenuAttribute.cs
+            "89cae0352490adc49b4d12ff7701437a", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonAssemblyProgram
+            "22203902d63dec94194fefc3e155c43b", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonAssemblyProgram/UdonAssemblyProgramAsset.cs
+            "3df823f3ab561fc43bcb81286e14b91d", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonAssemblyProgram/UdonAssemblyProgramAssetEditor.cs
+            "3c0638314c289c24193b47d1c53c9fca", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonAssemblyProgram/UdonAssemblyProgramAssetImporter.cs
+            "7e9bedaf686c5e448b06e64cdfe95728", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram
+            "4f11136daadff0b44ac2278a314682ab", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UdonGraphProgramAsset.cs
+            "31d6811854f59254aa1a263a8d566eb2", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UdonGraphProgramAssetEditor.cs
+            "2f2c773c057bbd749ad8fd66c018541a", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI
+            "57422d3fdb0cc124189c68f87b7157cd", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/UdonGraphExtensions.cs
+            "0261d54fb1cc86b46a074b8d6e477cf0", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView
+            "e2f2300f99ce0ea4a8d9a20b464384df", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/TypeExtension.cs
+            "dfca99fb2e099d84da6c504cd521aa70", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonFieldFactory.cs
+            "9214873dab0ea8a4b91861cd5a04dae3", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraph.cs
+            "f166d8f1c152ef34899019ab9a4fd0f2", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraphElementData.cs
+            "54dd824c6c614b94183d92710efe4f5f", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraphStatus.cs
+            "87e2044d3bcb715499ac68cc7380a9ed", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraphViewSettings.cs
+            "c6f017dc2674fec4da54a57b2655a948", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonGraphWindow.cs
+            "5dcd92112af21784ba5bf6383abab768", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonParameterField.cs
+            "70616b8b964e3664780fc03f65f27f4f", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonParameterProperty.cs
+            "fddc146e8502d7b49a294b6264d66dfd", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonProgramSourceView.cs
+            "e5786fc577943ae45953c6f54c97116b", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/UdonWelcomeView.cs
+            "aabdd863f82551d40bd3a1b0835d2fc3", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/VideoPlayerElement.cs
+            "0bea6600b38aa0249b02e3d3ee8a7d44", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields
+            "c66f97d5a5a38cb478fd4df11ece7be7", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/ByteField.cs
+            "602ffcf431b3e4f41a18bd868751439a", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/CharField.cs
+            "e79144dad56140a7bcd0d9f945153784", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/DecimalField.cs
+            "42d9183d7c7ce67448d1e010456e36f9", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/LayerMaskField.cs
+            "2a6b99e05a39452082bd89b0feec45ca", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/MirrorReflectionClearFlagsField.cs
+            "1c96407d2b7698c4c8a0476efa2c765d", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/QuaternionField.cs
+            "42747856e1884be6b1112c8838963662", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/SByteField.cs
+            "bcda1561abdb40c69f9eeb9211bd3e3d", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/ShortField.cs
+            "0b91b14ff1e24276863f173d0e9c760c", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/UnsignedIntegerField.cs
+            "1d1c8af690a94ef0a670e5d321733414", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/UnsignedLongField.cs
+            "1387a4616a8f4c87bd0d55d2ffc021c8", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/UnsignedShortField.cs
+            "22a713ed81ae4c7e9ad58760232ce573", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/VideoErrorField.cs
+            "eeb751ae1c234a04291c5039626f3470", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Fields/VRCUrlField.cs
+            "b029e079cc40515438800823a9649f5b", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements
+            "469db50616185d04e8a46dcd75db12d2", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/GraphElementExtension.cs
+            "7f257a6eeae213a4db991d486cace003", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonArrayEditor.cs
+            "f4f0ade55ae13b6468a765826f1f2540", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonArrayInspector.cs
+            "7e5916b8dd19e4445a9156a457b82ee4", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonComment.cs
+            "ba3ecc4c46929404d8c2ec920743b823", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonGraphElement.cs
+            "1b8045222a10ce04b815642b9cd5ca17", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonGroup.cs
+            "b006d67642298f04e895b6709ef12429", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonMinimap.cs
+            "dcd657bc1dcf357448d27bcfa8c5dc36", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonNode.cs
+            "8f83d1d3578dd28498c71a980bca86dd", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonPort.cs
+            "1d5984c5be753da439b8a33ffbee8d36", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonStackNode.cs
+            "2d0a4730c5f61b247b27b54f280300b5", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonVariablesBlackboard.cs
+            "2bca285c1c0c4a5cb2f03599b086abe4", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonNodes
+            "cbfa6b1c2cf44feca09853837fc740bb", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonNodes/GetOrSetProgramVariableNode.cs
+            "8164fc2c5c5b43428503cf064e8b53f0", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonNodes/SendCustomEventNode.cs
+            "6e65118bfe2d43f1ad2412dba47c21ee", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonNodes/SetReturnValueNode.cs
+            "fd9209fd8a363ee42a49a2afaeb35805", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonNodes/SetVariableNode.cs
+            "00b770580aae40ffb9f6a1d898b52269", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/GraphElements/UdonNodes/UdonNodeExtensions.cs
+            "134663bd781d7c44da7d4ef26c3345b9", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Search
+            "6581176c97993bb40976acff208bd0b1", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonFocusedSearchWindow.cs
+            "b721120e6c1d320448a55fe87a7de824", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonFullSearchWindow.cs
+            "e94c084f399869b42a21244fd07778c4", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonPortSearchWindow.cs
+            "6a6c453fae11b5349a33399e258d1578", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonRegistrySearchWindow.cs
+            "e5a10bb1987c27944bd08a88119b2844", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonSearchManager.cs
+            "d825ed3ba6aa7f14294e73efefc217d0", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonSearchWindowBase.cs
+            "16fc7a7a059deeb458fdcdf719b467a4", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonGraphProgram/UI/GraphView/Search/UdonVariableTypeWindow.cs
+            "96b1b528d37a7d04ba86ac84c184f2a2", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonProgram
+            "264ec3c8a1d423f42a144da0df6c5ebe", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonProgram/UdonProgramAsset.cs
+            "41d70977fa7936441afe41442f1862b2", // Packages/com.vrchat.worlds/Editor/Udon/ProgramSources/UdonProgram/UdonProgramAssetEditor.cs
+            "aef4e0e7dda5b5249a2587cd2a8a46ca", // Packages/com.vrchat.worlds/Editor/Udon/Resources
+            "9e84f8ee45862f04ca6b9f8d5c7f5897", // Packages/com.vrchat.worlds/Editor/Udon/Resources/CornerResize.png
+            "632470b93f35ec64ab6e3efd639c986c", // Packages/com.vrchat.worlds/Editor/Udon/Resources/DarkButtonBG.png
+            "d4ca7f47895ab36408e28f4f742fba99", // Packages/com.vrchat.worlds/Editor/Udon/Resources/DropdownBG.png
+            "d6fa9a7a95d88a74cb6f65a1e6609d32", // Packages/com.vrchat.worlds/Editor/Udon/Resources/TextBoxBG.png
+            "9769aa15c96ab354fac2153792524e81", // Packages/com.vrchat.worlds/Editor/Udon/Resources/TextBoxBGFocused.png
+            "f43fd332539599c47b3bb05ea38d5d0d", // Packages/com.vrchat.worlds/Editor/Udon/Resources/ToolbarBG.png
+            "5cbfe49b858635b44844a178cb934b68", // Packages/com.vrchat.worlds/Editor/Udon/Resources/ToolbarButtonBG.png
+            "7dade49b2f58f734f8db0983d8e7fb60", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonChangelog.uxml
+            "927841c571a405846b3442bc0aa56220", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonFlowSlot.png
+            "3803fec4c7b065042891595e749524cc", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonFlowSlotFilled.png
+            "7c75c00422f12124faed19bfb8dd96df", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonFlowSlotFilledLight.png
+            "610088fc92e5fc64b8c7f9e9c51f2939", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonFlowSlotLight.png
+            "d47fd176596dfbe4e9e78964b40c93ee", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonGraphNeonStyle.uss
+            "815baa9989198624aa5fec5ecdb42bd0", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonGraphStyle.uss
+            "0e2cfcbd717e75441b108d3ad9de2d29", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonLogo.png
+            "8cf68553c5a4bb140a6341072891aa88", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonLogoAlpha.png
+            "d0608d33a4043b2499adb1fee18f2a64", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonLogoAlphaWhite.png
+            "17102758d03099542afc7a1808745eaf", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonNodeAccent.png
+            "c0230adfeb2abe242b8d64c7e3bd2adc", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonNodeActiveBackground.png
+            "8289cc16393cd3040a9920e71bfe10bc", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonNodeActiveBackgroundLight.png
+            "f47842ead2f80fa46ab6e5bbde409193", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonNodeBackground.png
+            "c9235631e37566447ae4567624755326", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonNodeBackgroundLight.png
+            "2d2675a75fea1d2438859bdb320d544d", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonNodeInlay.png
+            "12f29a8be9fc52640b40f6ffa59336c6", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonNodeInlayLight.png
+            "1ed47570201e1854d9e455e38eecbcf7", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonSettings.uxml
+            "91b7c8d7d899ec04e9568e9385aba34d", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonSlot.png
+            "3a1ab76e09365f14cab0665b40da8843", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonSlotFilled.png
+            "add07ab72e2fc3d4d81143ab77d121f5", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonSlotFilledLight.png
+            "1badb339ed4f23541b6db8a9420aeea9", // Packages/com.vrchat.worlds/Editor/Udon/Resources/UdonSlotLight.png
+            "37bd184e5e9b13945840f70329f2e0f6", // Packages/com.vrchat.worlds/Editor/Udon/Resources/videoStill.png
+            "b4c3a6c91171f1c4483923e9c5b57301", // Packages/com.vrchat.worlds/Editor/Udon/TypeResolvers
+            "c041fa712f66a5d4f8525cd447dc8b29", // Packages/com.vrchat.worlds/Editor/Udon/TypeResolvers/UdonBehaviourTypeResolver.cs
+            "b5b544439bc9e594580f12fc38f91ba8", // Packages/com.vrchat.worlds/Editor/Udon/UnityEditorTests
+            "02e7e7f5f9fc2c24ab3af0b8780f3623", // Packages/com.vrchat.worlds/Editor/Udon/UnityEditorTests/UICompilerTests.cs
+            "3c3c5a3876474c648a47177c1875f447", // Packages/com.vrchat.worlds/Editor/Udon/UnityEditorTests/UnityEditorTests.asmdef
+            "bb0b53345af425f4ea051ef38d36ce45", // Packages/com.vrchat.worlds/Editor/VRCSDK
+            "1b3abf7e59395d84c84b48d69677daaa", // Packages/com.vrchat.worlds/Editor/VRCSDK/VRC.SDK3.Editor.asmdef
+            "c8eaf99d4376fef428e695736944b925", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3
+            "857dfa28ea5a4d00b87e04081e0d68e2", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs
+            "926862297eaa5434cb1640ece9bd8510", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/VRCMidiWindow.cs
+            "c9dee190dbea4fd0a14ebadf422e85e8", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/VRCPackageSettings.cs
+            "e91af89bd4738014f93521e8333fcfbc", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/VRCSdkControlPanelWorldBuilder3.cs
+            "73acba29b9a1642488ce2db2127141f3", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/Components3
+            "d57b23c04034119448f23c5fdbc57662", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/Components3/VRCDestructibleUdonEditor.cs
+            "5b1017097f3d46cd949892e0fce3ece9", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/Components3/VRCMidiEditor.cs
+            "8901d07a685ca424492a3cabff506184", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/Components3/VRCPlayerStationEditor3.cs
+            "4b2b9ac625bc5b04c887ff9ee9b5fdbe", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/Components3/VRCSceneDescriptorEditor3.cs
+            "a8cc4c1876b26174fbaeb062178a6bda", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/Components3/VRC_PickupEditor3.cs
+            "3f8f999a8e1ebee4588f94a8a618d7c6", // Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/Components3/VRC_SpatialAudioSourceEditor3.cs
+            "89715502d62a64f45a522a2523ff3cf7", // Packages/com.vrchat.worlds/Runtime
+            "7b00f453b3d0dd148802df95d9637436", // Packages/com.vrchat.worlds/Runtime/Udon
+            "c5a6a6448901a5047b542a9771565eda", // Packages/com.vrchat.worlds/Runtime/Udon/PostLateUpdater.cs
+            "45115577ef41a5b4ca741ed302693907", // Packages/com.vrchat.worlds/Runtime/Udon/UdonBehaviour.cs
+            "530bdb25a3862ff4c8be42f678c53527", // Packages/com.vrchat.worlds/Runtime/Udon/UdonManager.cs
+            "e9c25d2e2cefc694f92f74a0fb86abe4", // Packages/com.vrchat.worlds/Runtime/Udon/UdonNetworkTypes.cs
+            "3c1bc1267eab5884ebe7f232c09ee0d9", // Packages/com.vrchat.worlds/Runtime/Udon/VRC.Udon.asmdef
+            "d765adafc8284c14789b4ae774f7c410", // Packages/com.vrchat.worlds/Runtime/Udon/EventProxies
+            "5803ea71238fea9419dff378e1c5f5c7", // Packages/com.vrchat.worlds/Runtime/Udon/EventProxies/AbstractUdonBehaviourEventProxy.cs
+            "ebf60f9246d047e5b4eb276969598538", // Packages/com.vrchat.worlds/Runtime/Udon/EventProxies/OnAnimatorMoveProxy.cs
+            "d6977159f8fa81e44ba2d5701fbda163", // Packages/com.vrchat.worlds/Runtime/Udon/EventProxies/OnAudioFilterReadProxy.cs
+            "d85dc7e69ef80244189aaecceb6eed66", // Packages/com.vrchat.worlds/Runtime/Udon/EventProxies/OnCollisionStayProxy.cs
+            "861e3a1e3374f22478e5ab06b00b032f", // Packages/com.vrchat.worlds/Runtime/Udon/EventProxies/OnRenderObjectProxy.cs
+            "7bf26b5066b7f2f4b8c4e921e98523e5", // Packages/com.vrchat.worlds/Runtime/Udon/EventProxies/OnTriggerStayProxy.cs
+            "80229c20033661747afe59830a80c977", // Packages/com.vrchat.worlds/Runtime/Udon/EventProxies/OnWillRenderObjectProxy.cs
+            "3d0b50d74f1829046993e34afa683106", // Packages/com.vrchat.worlds/Runtime/Udon/External
+            "80455fb15755bfd47b1803c8fe84e16e", // Packages/com.vrchat.worlds/Runtime/Udon/External/VRC.Udon.ClientBindings.dll
+            "a5e7b2f5005f10e44b082e7c18871cc6", // Packages/com.vrchat.worlds/Runtime/Udon/External/VRC.Udon.Common.dll
+            "9d86dc4a513809149af3856eab191a3d", // Packages/com.vrchat.worlds/Runtime/Udon/External/VRC.Udon.Security.dll
+            "ecb1eec40b5e47047891ee46e739186a", // Packages/com.vrchat.worlds/Runtime/Udon/External/VRC.Udon.VM.dll
+            "92886df353bf1f14489cf2c4578e58af", // Packages/com.vrchat.worlds/Runtime/Udon/External/VRC.Udon.VRCWrapperModules.dll
+            "a3a3dda899277cc4ea6aebe18c6b5736", // Packages/com.vrchat.worlds/Runtime/Udon/External/VRC.Udon.Wrapper.dll
+            "fd278cc617c286744ab3c17775916f3f", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts
+            "958b822f881cee94fa3ce9e448ce0163", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/fontawesome-webfont.eot
+            "7b0e2552919dc70488a6d4a342b928a5", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/fontawesome-webfont.svg
+            "6cb934e9a1d9ea6448040aad7dbeac81", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/fontawesome-webfont.ttf
+            "157434a595e08d248a65d0700ba86a66", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/fontawesome-webfont.woff
+            "7facddc01811f7b4aae49393880e1384", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/fontawesome-webfont.woff2
+            "452f7d8d1a7418943b69d2df35655ebe", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/Inconsolata-Bold.ttf
+            "e3027d149d2f75647b130d9ed7f7014c", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/Inconsolata-Regular.ttf
+            "d8a7948bc83b01f45ab5078c10dd8e04", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/Lato-Bold.ttf
+            "98baae691215eb546a697ff7d942a5bb", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/Lato-Regular.ttf
+            "79f72428ef5a94f44a224932dfc8bc22", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/RobotoSlab-Bold.ttf
+            "f23c08f75b40f494b9b74462d7310dfb", // Packages/com.vrchat.worlds/Runtime/Udon/Fonts/RobotoSlab-Regular.ttf
+            "dc78d022ca8cdcd4ab00c3beb632fd21", // Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources
+            "bf61d954ecb803046953c666facfb904", // Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources/SerializedUdonProgramAsset.cs
+            "a73430194874a6a4ebdd5c0fff235111", // Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources/Abstract
+            "2fad63ba312d5f44a8ab215c3f5b18f1", // Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources/Abstract/AbstractSerializedUdonProgramAsset.cs
+            "7fa64b2d7df72fb4cbf7898a400e86ef", // Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources/Abstract/AbstractUdonProgramSource.cs
+            "969cefdd8205ccf40a180e74f37f21b2", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization
+            "bdfe5e856bdc1964b98db849426fd028", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/Formatters
+            "b1d0b8aa8084bcd44a572d524d7a31bb", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/Formatters/UdonGameObjectComponentReferenceFormatter.cs
+            "f2626352b2a60eb41adc3580ae44c750", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/Formatters/UdonProgramFormatter.cs
+            "b4297afd7f7aed84393e952440959fea", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer
+            "ec4e6da38017fe7df076afceb30fa17c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/LICENSE
+            "2105a6c0e5c0955d2d4a704c5e9c9b8f", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Version.txt
+            "f70a94b0bedfa8ec50ed757f72032810", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/VRC.Udon.Serialization.OdinSerializer.asmdef
+            "807997f9a489fef46b3bbc241aaeb2f9", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Config
+            "bfaf18dca1f68cc99ebeb0b862179265", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Config/GlobalSerializationConfig.cs
+            "611bdb2531ad4264da1bf57af6963b7a", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core
+            "9c9b8b0ed146a4f459d08999c54a9f8a", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters
+            "4ac1e1612275111bd50db8a3de8ba9c4", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/BaseDataReader.cs
+            "501a7e1356f5fdc8e9bbefcd61a56490", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/BaseDataReaderWriter.cs
+            "9638b18c6b6b6532b3b3cd3a73fefc2a", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/BaseDataWriter.cs
+            "dc1fe25e670cf981ed66b3e85c3e4249", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/IDataReader.cs
+            "af6696e41807b3c3f9a1d73667f76701", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/IDataWriter.cs
+            "5c9619f514cdff2428036e02b47f6fa8", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Binary
+            "ee0465a1838833eb878447b34339d4f4", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Binary/BinaryDataReader.cs
+            "1bc9e2503afdd0290574ebc14cf4a16d", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Binary/BinaryDataWriter.cs
+            "1361420bc2b384389a065fd2fe59fb22", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Binary/BinaryEntryType.cs
+            "5af9fb1a12e46e34989948edd205430c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Json
+            "7a3a6dce9e0b8317b3804b35f48f6a97", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Json/JsonConfig.cs
+            "2ecc39ef0dc55ec10f83bb7eefd4f1db", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Json/JsonDataReader.cs
+            "3e05b98a26be61fa9203d4a45bfc1e95", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Json/JsonDataWriter.cs
+            "aad0a34e801ae645b359e4800ef7f636", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/Json/JsonTextReader.cs
+            "44eda941bcc959347ae5b5185914213b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/SerializationNodes
+            "6a0f5e01b82ae0763f6f907157a2c9c8", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/SerializationNodes/SerializationNode.cs
+            "eab5938e837a8de93ce64c25399edde6", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/SerializationNodes/SerializationNodeDataReader.cs
+            "9321fb650525f4bed18119d187111569", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/SerializationNodes/SerializationNodeDataReaderWriterConfig.cs
+            "dd54f07c359d141095a031192c5ca084", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/DataReaderWriters/SerializationNodes/SerializationNodeDataWriter.cs
+            "232299f7185c9834a9afde7a9c808c07", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/FormatterLocators
+            "0bdecd79f568c8a3252bb5a9f3e2acdc", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/FormatterLocators/ArrayFormatterLocator.cs
+            "c4228cdbba89e2a5d52357b998c3387d", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/FormatterLocators/DelegateFormatterLocator.cs
+            "cf715e98fa96d74c81b4d3f4491d2592", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/FormatterLocators/FormatterLocator.cs
+            "d35d0d1eb290f5d00e273d65e5db09d7", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/FormatterLocators/GenericCollectionFormatterLocator.cs
+            "f2a9beaeecdd6eb929ddb049d7846a14", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/FormatterLocators/IFormatterLocator.cs
+            "cdd12b278851bfdc68ca0d9e1e4f2d28", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/FormatterLocators/ISerializableFormatterLocator.cs
+            "876ae9a404abe412e663fd9bc03d3525", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/FormatterLocators/SelfFormatterLocator.cs
+            "00e10f526d476731ebc596ceb66271a6", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/FormatterLocators/TypeFormatterLocator.cs
+            "a65e4386997bdeb42a6bc1c626d9f61c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters
+            "9aaf14140a26e04b861b027d5ddb8fb6", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/ArrayFormatter.cs
+            "3f5dc00eb17e568de42119a7f0f30ee8", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/ArrayListFormatter.cs
+            "9598679c29f3e3696941746c26f1ccf8", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/BaseFormatter.cs
+            "dff51bfb9b4d71aa78b3e5c8fec8c924", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/DateTimeFormatter.cs
+            "3480954e7eecdc9745c1d08721b2f8b3", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/DateTimeOffsetFormatter.cs
+            "4f17b17e986ae6f3be6a2ea1b716fcaf", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/DelegateFormatter.cs
+            "4402da708267c579874c808a813bfe62", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/DerivedDictionaryFormatter.cs
+            "b80567603fe814a8b4341584f8c3b4a6", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/DictionaryFormatter.cs
+            "5c21ee7e54dff531da57563e2f81fff5", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/DoubleLookupDictionaryFormatter.cs
+            "54578488936f8484c97ba7c52bfb0563", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/EasyBaseFormatter.cs
+            "e226537cbfa910681132da3718f41c34", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/EmittedFormatterAttribute.cs
+            "149c482b2ab9c601b8bc2ecc20bbd8d9", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/EmptyTypeFormatter.cs
+            "b7da6bf97199e0bb743f7639c17112ac", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/FormatterEmitter.cs
+            "06ccb8250c692f2695d28bfd6bcd4273", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/GenericCollectionFormatter.cs
+            "f1eaa1b43658215b6d81013928eac19e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/HashSetFormatter.cs
+            "0fcb040f1c493dc2a5224e446be8b3c9", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/IFormatter.cs
+            "5cae1c5d1116a090d70b6d0289061d21", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/KeyValuePairFormatter.cs
+            "ba4ee6777a44f6e9a8e2e0a222c0f7db", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/ListFormatter.cs
+            "21078ce134ce87231526dee77088e7ab", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/MethodInfoFormatter.cs
+            "ae604bc0ef4ef9938100804f05decb21", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/MinimalBaseFormatter.cs
+            "dc1b5b3148988d0d4fc2dab60a5c146c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/MultiDimensionalArrayFormatter.cs
+            "f9ea00de8051ca957d994e11630671d9", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/NullableFormatter.cs
+            "6b6a62ea2fe943a4b261f832e8a1f3dd", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/PrimitiveArrayFormatter.cs
+            "8045e4edca7c27f5b16bd90d7101c935", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/QueueFormatter.cs
+            "15fa864c9e3363220ceac4ec93c7f5b8", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/ReflectionFormatter.cs
+            "dde0095df6bea6624dfa72a31127bc48", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/ReflectionOrEmittedBaseFormatter.cs
+            "12a47dd574302b77ba3c5ac05cd04541", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/SelfFormatterFormatter.cs
+            "0f59404c810d015ed87c7e1557188435", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/SerializableFormatter.cs
+            "087303d0d43cf7ce5af060a0cc0b5d38", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/StackFormatter.cs
+            "4b0676b49f03cc50a1e532cf23e3988e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/TimeSpanFormatter.cs
+            "c6529471b992ba4080a123aa504ef9ea", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/TypeFormatter.cs
+            "4a7c8e71a3ef1124db10e72af34e1724", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Formatters/VersionFormatter.cs
+            "d7a0376b98982f045abaf16924545bb5", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc
+            "23fa5d3fed3b4b9de502257a594b00de", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/AllowDeserializeInvalidDataAttribute.cs
+            "92726834b08002d525b86fbb012e184f", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/AlwaysFormatsSelfAttribute.cs
+            "72783638708ea644ba5c3e1b91f827f6", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/ArchitectureInfo.cs
+            "ad4e17831e9503c1f11149997c609477", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/Buffer.cs
+            "e7e73146f1e861c27c5608bff4142402", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/CachedMemoryStream.cs
+            "4fd6ff4077bbbef9b366d8ffd9236173", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/CustomFormatterAttribute.cs
+            "e02123fad495d06f2a89e5335f00126c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/CustomGenericFormatterAttribute.cs
+            "97e9e01eb36fd43879b166b6b3c2469b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/CustomLogger.cs
+            "95bb5531b6c1d1a5eab8400ea1bd6167", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/CustomSerializationPolicy.cs
+            "c2a40a3e6a114e5a50c0af209b8ae35e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/DataFormat.cs
+            "0bd9ab6cf3bd913588b6652279b7a6ba", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/DefaultLoggers.cs
+            "996e793dcc0920d2590cb61f0761d498", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/DefaultSerializationBinder.cs
+            "c79df97337d89089be40beb2e272df0b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/DeserializationContext.cs
+            "ae849a3e6d277006f3b4dd58a5765955", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/EmittedAssemblyAttribute.cs
+            "3b06b106636f38afbb25ddd11e0c597c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/EntryType.cs
+            "c73435dff291e72c0d9ce55b59c39145", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/ErrorHandlingPolicy.cs
+            "df06475ac5299f402ca1bdee3cf7e702", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/ExcludeDataFromInspectorAttribute.cs
+            "08528593c8dd764b6d928dcee6daca9f", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/FormatterLocationStep.cs
+            "30194d27b77855bf09b9af809a761ca5", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/FormatterUtilities.cs
+            "32f94aca65b8d09ddd7b3db72e08db3f", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/IAskIfCanFormatTypes.cs
+            "7ef6b6dd5e3be66c3a66753cc7e799de", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/IExternalGuidReferenceResolver.cs
+            "d1eaa1a505a876bebb9cad40d01989e9", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/IExternalIndexReferenceResolver.cs
+            "9414cf6a3ea9a51afcf648fe9ea02bed", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/IExternalStringReferenceResolver.cs
+            "8bab352682356b8a2b02842520a68a11", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/ILogger.cs
+            "106ca47adfa52732b129015337a1c8cd", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/ISelfFormatter.cs
+            "90bcbfdc0286ca48d51fc578a1e15b8f", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/ISerializationPolicy.cs
+            "7de3f23805ad9d4b3d033eef45e3b59b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/LoggingPolicy.cs
+            "10eb7be2b7c363367c46bc5699a361a8", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/NodeInfo.cs
+            "766bbafe64ad16f63af4b81eb430e380", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/OdinSerializeAttribute.cs
+            "3db8c00661ec222984427ab12295940f", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/PrefabModification.cs
+            "23ceed712f987034deb8e92c561a1d3b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/PrefabModificationType.cs
+            "96fec6c04f13e378def42ea5ad5dc940", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/PreviouslySerializedAsAttribute.cs
+            "989e99cd5b8f922edc1b13bbc22f4289", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/ProperBitConverter.cs
+            "82702718797409c332f9174bdad57bbc", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/RegisterFormatterAttribute.cs
+            "a000ffc63858a974eb63d9ef6f91adac", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/RegisterFormatterLocatorAttribute.cs
+            "dca124a461001ad1494664ed95539612", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/SerializationAbortException.cs
+            "eba33c8e77e2084c660af46be1b547dd", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/SerializationConfig.cs
+            "1e93880e733f9a6a084cf4061634e7fb", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/SerializationContext.cs
+            "67a19021ff9e6b27d8e9257ad075055a", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/SerializationPolicies.cs
+            "08607b6e9c39ec19c1b61341583c2f3e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/SerializationUtility.cs
+            "bc69d8fd9d15913a491a45d1e040faf6", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Misc/TwoWaySerializationBinder.cs
+            "337bb8bb47970764496c05fd03fbee13", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers
+            "0e8d8c5a97fdc322a8b8471aaf02f469", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/BooleanSerializer.cs
+            "8aa9f52771b0e4e6f8f0c438a4f0430b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/ByteSerializer.cs
+            "d44d1ae83013328d7b855275fa1cfad7", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/CharSerializer.cs
+            "5a2a43b51cef79fd0e85028650394b55", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/ComplexTypeSerializer.cs
+            "50c67937d611e4749188b838e4cff5dc", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/DecimalSerializer.cs
+            "9fc4716f683bc313c24bfa537cdd97f6", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/DoubleSerializer.cs
+            "7a5d23b139cd8e692702aa431b071d07", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/EnumSerializer.cs
+            "19dcfa9f6a40979fc2b6c3ae0f24b67c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/GuidSerializer.cs
+            "d280b44f7c75a9a18484a84745998130", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/Int16Serializer.cs
+            "eafebb70813195e03b1ba467931eb686", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/Int32Serializer.cs
+            "afe45c48508431a62aba886d943d8501", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/Int64Serializer.cs
+            "6ccaffe3090611c2ada67d49cf834771", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/IntPtrSerializer.cs
+            "88f3ec418fdfdd7eabd6134f1de91991", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/SByteSerializer.cs
+            "29261eaea99f2d34c42cdc0b04f95daa", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/Serializer.cs
+            "7aa356971fd0b66eb59875b278fa7f03", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/SingleSerializer.cs
+            "85996580a8691185d06ec342c5c43747", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/StringSerializer.cs
+            "3936194ea64890e11a7db8474eb0bbcf", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/UInt16Serializer.cs
+            "f30e426f88b471e498dd1853b7bbaee6", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/UInt32Serializer.cs
+            "f55c085325e12800428d01e3535cb297", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/UInt64Serializer.cs
+            "0ee9dd19c234e4b16c835b9188459e36", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Core/Serializers/UIntPtrSerializer.cs
+            "731b436f14c0a054d9e2f0ab3e15e24b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration
+            "94a6cc2044fcd2cb317b1cdb1e8fcdaf", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/AOTSupportScanner.cs
+            "f5fe153775edbadfa2b659e0e35dc881", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/AOTSupportUtilities.cs
+            "aaf2f90207414827b53b85dae0eae82e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/OdinPrefabSerializationEditorUtility.cs
+            "de5584f66ccc5e072681a310c5987b8c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/UnityReferenceResolver.cs
+            "f670c1f9aa9ab0c5988e81802c005767", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs
+            "9eb15f2339819bb651c7872d73c89776", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/UnitySerializationUtility.cs
+            "55ffebf7dee93e24a93effecc78ad42e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport
+            "864fb1c011715f9df2998d71ac8716f6", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/BaseDictionaryKeyPathProvider.cs
+            "ef6f699f176c2dfdea788982526f989a", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/DictionaryKeyUtility.cs
+            "b513c156933d8b833ccd40d717bf7e2b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/IDictionaryKeyPathProvider.cs
+            "54f653ed4a4e15c07057283c11dce4d9", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/RegisterDictionaryKeyPathProviderAttribute.cs
+            "0405ef103432161dff609e75f71f3f55", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/Vector2DictionaryKeyPathProvider.cs
+            "1d61e235c606c1c9d7269f7e68471e38", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/Vector3DictionaryKeyPathProvider.cs
+            "51bb2cf369b5ea90948a20e4f2ebae48", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/DictionaryKeySupport/Vector4DictionaryKeyPathProvider.cs
+            "a7dcf20a0423fd046ad1bd854676dc1c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters
+            "3d2976bd61cccf62b11b4d3f02762465", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/AnimationCurveFormatter.cs
+            "6ff1b29d64402a15d020739becd8661e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/BoundsFormatter.cs
+            "0878ec68b6ab3c9ebc365b6d139e4840", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/Color32Formatter.cs
+            "25e35581ce6d1febd9ac41864a76ecdb", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/ColorBlockFormatter.cs
+            "484768ba343a6a05522c29d81a4ce61d", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/ColorFormatter.cs
+            "c3968bef792c5668478ac01be7645b30", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/CoroutineFormatter.cs
+            "b5b415c00da8157ac50b8f5543f0b1d9", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/GradientAlphaKeyFormatter.cs
+            "8936a3e43078251682f18923139f7aee", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/GradientColorKeyFormatter.cs
+            "d5b54660d5342fd45e2e43775538879d", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/GradientFormatter.cs
+            "68ac0b27f571616d3ed26c23eef40c8c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/KeyframeFormatter.cs
+            "afc596cd95a1ac316024d16f6fec6536", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/LayerMaskFormatter.cs
+            "558323987bf9b75943382a5faa093ee3", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/QuaternionFormatter.cs
+            "196809b991e565a48e3d4ad08cb30b5e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/RectFormatter.cs
+            "c934302874ac3315ed322feefefa1f9c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/UnityEventFormatter.cs
+            "70c675a7b4c71c685ee39d745ccb058b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/Vector2Formatter.cs
+            "da2644647af1368176103aa87de1dbaf", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/Vector3Formatter.cs
+            "60afa8ede3981c383782a01ddc55e943", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/Formatters/Vector4Formatter.cs
+            "e281f95be0fe014489e2c46801dce8cc", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects
+            "ff1ca109149d83b03b39644f8045275e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/IOverridesSerializationFormat.cs
+            "8942002e9ac41c2bfd27c4fbedf93f09", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/IOverridesSerializationPolicy.cs
+            "7279ec8ad7837f13ec833193ab4282cc", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/ISupportsPrefabSerialization.cs
+            "ea095023abd05a7af0da4166dcefdee8", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializationData.cs
+            "c3cecb461cebbc940ede3b5ddb72382e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedBehaviour.cs
+            "56b88cfe9935184fe250bda018144f26", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedComponent.cs
+            "d1b9fa6342beb9fdfc2c4bc1d8e5e971", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedMonoBehaviour.cs
+            "6cb9325ffffee5d6ed94d71590b4049a", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedScriptableObject.cs
+            "eefcd68a84ee7903b08c6254c17fafe3", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedStateMachineBehaviour.cs
+            "d62f7ab4e5aa075b819d6c71e929686b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedUnityObject.cs
+            "ca7f444c17d9a964b8a4a1f6e2cdcd81", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities
+            "60ce66bb14565324f808025ac6b8bb51", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions
+            "78ce67c0b3c1975c520a08d1ff9fd24e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/FieldInfoExtensions.cs
+            "068f5645a5c3f9ce36a580ec57e775d1", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/GarbageFreeIterators.cs
+            "0f84614827ff91701149564447a3932b", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/LinqExtensions.cs
+            "62088a9c188c943eb4035de16eb6ec32", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/MemberInfoExtensions.cs
+            "63a9a0384a6fe66fb04f82f325895b30", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/MethodInfoExtensions.cs
+            "1df9513f03131466eecad22d1b19c4d8", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/Operator.cs
+            "da8aea12015a2df5402c9e2d4f1cec5c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/PathUtilities.cs
+            "7f13450d6fd82372ffa7ee075a8eb4c9", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/PropertyInfoExtensions.cs
+            "b554cbd9469011b544a2d92ae85a3b60", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/StringExtensions.cs
+            "a6a172cef14a88c7fb714df37bbecedb", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/TypeExtensions.cs
+            "eb77f5278e425e91b71e186df29a5f16", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Extensions/UnityExtensions.cs
+            "72610a344c18b244c8bb6bc26a6fc01c", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc
+            "787c97af872124f748a4a9b366f325d3", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/AssemblyImportSettingsUtilities.cs
+            "146b6bd1e3b0f0926205abf839ec9e6f", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/Cache.cs
+            "1bd625694c606aab0cb7895da4911c6a", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/DoubleLookupDictionary.cs
+            "bda92ec6156282448e883bf8f6a781fd", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/EmitUtilities.cs
+            "570028979953bd2c60b7e89ff7cef92e", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/FastTypeComparer.cs
+            "42e5d977e21c7a6524213a8a7dbee24a", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/Flags.cs
+            "783316da32d87acfae14953e341732a3", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/ICacheNotificationReceiver.cs
+            "1bc635f3755c60fe69f1895dd53974e2", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/ImmutableList.cs
+            "000592e93b119574207ea3bf59f659e4", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/MemberAliasFieldInfo.cs
+            "c1e85c1ef449ccb40e05f0afd3dd717f", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/MemberAliasMethodInfo.cs
+            "00bf47593f2a330c1bb41552bdc1233f", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/MemberAliasPropertyInfo.cs
+            "5ad884ed6013d621a310ceb4c954f62a", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/ReferenceEqualityComparer.cs
+            "0fe3820fb4651e200f17905245ec8be2", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/UnityVersion.cs
+            "93b4d01199b118896c756b09a9206fc0", // Packages/com.vrchat.worlds/Runtime/Udon/Serialization/OdinSerializer/Utilities/Misc/UnsafeUtilities.cs
+            "3136cc4f06d9c29479bfcec9477c2b01", // Packages/com.vrchat.worlds/Runtime/Udon/WrapperModules
+            "f6cfa3d8ec4f885468d17f5b023d2529", // Packages/com.vrchat.worlds/Runtime/Udon/WrapperModules/ExternVRCInstantiate.cs
+            "fedc842c37877e242b1962397c0c53b6", // Packages/com.vrchat.worlds/Runtime/VRCSDK
+            "6490804aa441dfe4b88eb56cccbdf081", // Packages/com.vrchat.worlds/Runtime/VRCSDK/VRC.SDK3.asmdef
+            "6017c6303098c394fac5af6f0436f6e1", // Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins
+            "215be632cb025bd429dd50a3fa942168", // Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3-Editor.dll
+            "661092b4961be7145bfbe56e1e62337b", // Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+            "6f344c27aab1968468bd1d843a486273", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3
+            "87f13d6a98e54fb78ca47650a29029a5", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/UnityEventFilter.cs
+            "77e743f6fbeca9e4eab3a2a71c301d66", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi
+            "fb33369bfa554472b08fc6828450a2c4", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/VRCPortMidi.cs
+            "309df73c0af69074285daf6b2faf20e3", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi
+            "61b00e22036b5cc49a565aaec91ca8cb", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/Event.cs
+            "bbb88a986ea685d41a9eac3aa3dd8c60", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiDeviceInfo.cs
+            "02b0549f0815d8a4982133c0a99880cf", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiDeviceManager.cs
+            "6b1e1637c177e0c43af16fefddc0826c", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiErrorType.cs
+            "b8f59aea3b1948f4ebb0d7835b69bbb7", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiEvent.cs
+            "a9aa39367a5a6014e8ae35c4c0fc0fd0", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiException.cs
+            "9ddf13cca3c55164692f303b16a5fb2d", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiFilter.cs
+            "324be2ea40d796c49b74c60b8c2e5c97", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiInput.cs
+            "c18643a5c49be3649ade32f7c9b19e99", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiMessage.cs
+            "a806da9b51653af47b83c3c10a6eed65", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiOutput.cs
+            "f858f0a52902aaf4298247159434e1ae", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiStream.cs
+            "63050b27ae9f6ab4cb3837f915f15067", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/MidiTimeProcDelegate.cs
+            "e20f952b815e0fd4c89e244be795b605", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/PmDeviceInfo.cs
+            "36b7824d7ad3b3f4fbb5ed6d2a5766ec", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/PmEvent.cs
+            "5d4b9d0d9dfad1c4894df5c2a5530696", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/PortMidiMarshal.cs
+            "c582da34eedb1de4189913692fbb93ba", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/Plugins
+            "b8fa149b5bf9bb141b66b5a486921d15", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/Plugins/Windows
+            "372656c38e5c12f48b819e12fa08ac7b", // Packages/com.vrchat.worlds/Runtime/VRCSDK/SDK3/Midi/PortMidi/Plugins/Windows/portmidi.dll
+            "38b951be591f07f46937afb0b5505eec", // Packages/com.vrchat.worlds/Samples
+            "6fffe55b591370240aaf9cf38b4286d0", // Packages/com.vrchat.worlds/Samples/UdonExampleScene
+            "4f71908aaae3aac4ebcf83e4abbaea68", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonExampleScene.unity
+            "7cf62214cadcf1049bba3c91470697b8", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials
+            "506771de2b6f16f4494d9cad34491466", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials/AVProVideoScreen.mat
+            "e3769e73b10dfc1498cf1136e66de63a", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials/CubeMat1.mat
+            "99f7ea0146bcbb64d97a8468253bb347", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials/CubeMat2.mat
+            "cc54f62d6419422419aacb98b2cbaa66", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials/CubeMat3.mat
+            "3e749d8edb4501f488bf37401bec19cf", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials/Ground.mat
+            "c706afb4295d44a48a7a860f31d36150", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials/LineMaterial.mat
+            "8f5d353f21dad544ebeb59af6fe64604", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials/PickupCubeMat.mat
+            "219b8b6950b888f40b189f45cb13f02a", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials/TriggerAreaMat.mat
+            "cba30de4550b90f4f8ef7bc7d94faf95", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Materials/UnityVideoPlayerScreen.mat
+            "123a5f67d0ce2744e8edfdc92d2638e6", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs
+            "23dafc7d7a578b44f9cb37330ca2a156", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/AvatarPedestal.prefab
+            "b1a39f599f0964049b1c3ba10835ddf9", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/SimplePenSystem.prefab
+            "d25c8082618057240967336d52b56d3c", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/Udon Variable Sync.prefab
+            "70279d83763c0d745a4e513a75053671", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VRCMirror.prefab
+            "00bd1d0a2cb96d845b0767189f49508d", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VRCPlayerVisualDamage.prefab
+            "77a89e097657af54c85573a268691d5f", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VRCPortalMarker.prefab
+            "8894fa7e4588a5c4fab98453e558847d", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VRCWorld.prefab
+            "56c5a8cb191b3914d95318838081d8c8", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VideoPlayers
+            "0d3d2df115d3d5147a07bd2e971a4443", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VideoPlayers/UdonSyncPlayer (AVPro).prefab
+            "f2d01e7f26c5bb04f8c22c15fbf7475b", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VideoPlayers/UdonSyncPlayer (Unity).prefab
+            "bfafef1927866eb4b85b6cf489f8f68e", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VRCChair
+            "4715e20276be3b141a6a216230cab4e9", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VRCChair/StationGraph.asset
+            "1dacfe29d81b51c46a85f97842455123", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/Prefabs/VRCChair/VRCChair3.prefab
+            "880ef7110c89e0f4caf7079b0addbc08", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet
+            "70108d78e82c2ec488d6b504865508e0", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/SampleAssetsSet_V1.fbx
+            "6348f120fe545704ea455382ebe3f274", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials
+            "fc18322c8bd152b458ffc49ade697169", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/GridFloor.mat
+            "fd20e45036ef323459e8286e9c23c02c", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/GridFloor_udon.mat
+            "1c987494452b85f4ab4cac3322415907", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_matte.mat
+            "f32dd500294c1d048bf0629cf0c69be5", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_matte_blue.mat
+            "a6c1d9564b56ecd47b82dfa7a8f11cbe", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_matte_green.mat
+            "3b420fd445c370647be21f178917127d", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_matte_red.mat
+            "5bec13570cd015140a051a07a3c55af5", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_mixed.mat
+            "278c5fc8b64c3514b98f6554ff2e1328", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_mixed_blue.mat
+            "1e2cef468006db345aef0ff70a68e96f", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_mixed_green.mat
+            "3fc341313acf6ac48af69958cf612904", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_mixed_red.mat
+            "916688f1c2e4c63498d399d9335c9ef7", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_shine.mat
+            "5461c3b904b45cb4b932e10263cb3c88", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_shine_blue.mat
+            "2d24fc897d87d8d4a80a06e5684c2eb7", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_shine_green.mat
+            "d419d3432b8a0a24b986e614c57c2039", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SampleAssets_shine_red.mat
+            "21221da753878694b9b9518a540dda85", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Materials/SKY_UdonLab.mat
+            "096b381315a8769469f21ddca35b84d3", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs
+            "d42d6e607dd21cf44945dc953c8aa1e3", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/Floor.prefab
+            "53370219a5e4a584f9c6395b208dfda3", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_billboard_matte.prefab
+            "c54c44a7b317f1349b5bbf3315981f3d", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_billboard_mixed.prefab
+            "05606a80052633b4c85dca01e934d390", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_billboard_shine.prefab
+            "706a6b0da0fe80a4080ffc5d4e3225e0", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_button_A_matte.prefab
+            "7658a1c7a33fb0f4b9a41f41dd825e3d", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_button_A_mixed.prefab
+            "ebf0301a541f0dd4886bbf3682912046", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_button_A_shine.prefab
+            "3486463dc6f1f3341a3708cd620f4811", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_button_B_matte.prefab
+            "b3dc6a315139c4a44bd3184523b641e5", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_button_B_mixed.prefab
+            "b33b62db28a33a14993177833ee91f41", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_button_B_shine.prefab
+            "be555230638b05445b7a82c619f0bccf", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_chair_udon.prefab
+            "67fe5764aeb1bed479337d54d189d208", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_chair_udon_mixed.prefab
+            "ad5069971f2a1ea47b4db3525d965c91", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_chair_udon_shine.prefab
+            "382bdcf96025b7440af9c72a7e1b6872", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_cube_A_matte.prefab
+            "5cd93a74517fed64db2b6fce666760a4", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_cube_A_mixed.prefab
+            "fb7e5afc37161ed4ead2fdd070c9a537", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_cube_A_shine.prefab
+            "e6927a60d9835084594485b53371cdce", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_cube_B_matte.prefab
+            "2a41fcd39a5fb094fbdd414730ed7d9c", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_cube_B_mixed.prefab
+            "f70e27dc68a53cc4aa9513aa5e0468e8", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_cube_B_shine.prefab
+            "f3b2536f1de783f4182a88b6bd9e1645", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_pedestal_udon.prefab
+            "aaa719cd8b802744598805bb392fe605", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_pedestal_udon_mixed.prefab
+            "f8e6c0777affc3741b0e7db6ca23a036", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Prefabs/VRC_pedestal_udon_shine.prefab
+            "2d0c714e6514cd74d81e9642152cc664", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Scenes
+            "fb2bf244d4eae16499733b84929676a1", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Scenes/SampleAssetsDemoWorld.unity
+            "46b60468ef2ab9b45b3eea17cccf7733", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Scenes/Udon_BlankCanvas.unity
+            "372e5c0229500aa4a996d31ca3ebafe7", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures
+            "1d50805597ae3674f9267fafbce3733a", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/GridFloor.png
+            "b2c2c1a52cdb75943958a408093dee04", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/GridFloor_udon.png
+            "04ee77386b489e242b4c22da9d3b64c9", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/textures_mixed
+            "6d3a4716a21ee164eb4b89e692a0c95c", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/textures_mixed/SampleAssetsSet_V1_phong1_AlbedoTransparency.png
+            "b82ab2397d1e79e47a6f85d50ed6fa8f", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/textures_mixed/SampleAssetsSet_V1_phong1_MetallicSmoothness.png
+            "559d1fda9b459bc43a0b78d7fbe50b00", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/textures_mixed/SampleAssetsSet_V1_phong1_Normal.png
+            "ff99e462f725faf418d62374e5d29591", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/textures_shine
+            "95687c795811ccb4e940f7c5f0864b08", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/textures_shine/SampleAssetsSet_V1_phong1_AlbedoTransparency.png
+            "c9a5a786a2a781d4fae92d02de3b610f", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/textures_shine/SampleAssetsSet_V1_phong1_MetallicSmoothness.png
+            "252675587bd0e5841aa3c82a5098201c", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/textures_shine/SampleAssetsSet_V1_phong1_Normal.png
+            "9315d9ed74100f147b1bf15b4f90b862", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/texture_matte
+            "ab4e1feb84159f146bd1666598bad003", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/texture_matte/SampleAssetsSet_V1_phong1_AlbedoTransparency.png
+            "4ba9f24739c8721499ae85110ba2157d", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/texture_matte/SampleAssetsSet_V1_phong1_MetallicSmoothness.png
+            "5e07d6e71c9ed3f409237935b1c7a96e", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SampleAssetsSet/Textures/texture_matte/SampleAssetsSet_V1_phong1_Normal.png
+            "16324923276b2e24386f90b095a57046", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms
+            "0084f06feed78df4598d31467bfb5ad8", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/0579e2f7d1c57a241a07d45f6088960b.asset
+            "dae65eb5fb00e8b47a845c94a293e268", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/0e78d0c5c758aaf4f9d0ace911a2c5d8.asset
+            "b020b97bb8fe7eb4cbc33cf3ea9ddf4e", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/0f3632a4c15254e4185e597a9b553015.asset
+            "be32d8a368369b646ad1d60f104d7790", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/1099cbb6e22bfe74a93b71dfe7c428aa.asset
+            "1f8046e5a46216043ae32287d3d8a0f5", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/18a8a73823b22934e929c67357a4e2d7.asset
+            "066f3af3c5289fd468eddc9652c8960f", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/19c6455fcf036f447a988be402108b3c.asset
+            "2146353cfe319a34e9b5bdc79c54ea7a", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/2a34c3726f5aaca4c9b05004c07eb5c6.asset
+            "e393818b9bb38234ab7ba8cd52e84604", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/2de31a7dfc5718c47aa82772c351b8a3.asset
+            "280c6d04ae0aee944ae455d58373f94a", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/3f7757f3a3e464644acd66ab61321b36.asset
+            "869c42aa9d0e8aa4cbba7e1cb2f1d469", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/46df060d25eb3bc42be5fcfae616147c.asset
+            "f5afe499f8835534481ce1bca8a59df1", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/4715e20276be3b141a6a216230cab4e9.asset
+            "277be80e5953c544d9df339328efd1c1", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/4bfd9d9a0b7684c449d31b38065b43f4.asset
+            "a1138eb26881a404eae6487507dfabd8", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/5893300e3f688004b9251878e312d460.asset
+            "a535e930fcaeaa14b8bef1e98b08c502", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/6657daa4973ee1249aae293810e8bccd.asset
+            "1b252f6c7bcdd8442a70e93bb939c627", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/73571ae951ee35b479181d7ee4a4be25.asset
+            "8259594746b9e7840827e62e19121d83", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/853a35cf0f51df6498d68490a1f662e3.asset
+            "c0be0a8c517995a458fd900c40362246", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/8803f6df285e2fd48bbd0aeeb81ed533.asset
+            "38275162bcd54164781ed4d064c1bb04", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/980a7697571ae1540827c8b930f79790.asset
+            "3fdaca2a1f34bfb47b549604ebb8237f", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/98cd88d0adb2e994a9e93d2efefa9eb4.asset
+            "e77a96be0333ce647b04d49c7912a035", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/a7250c474046ad245ac64456f76800ca.asset
+            "9de7bd535d37225438d5b812d439af19", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/aaaeaa7ebc8e35a4e9ad1275785b2636.asset
+            "bc53300f7f8f86e469c869b5cbfa6814", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/aacda992b3a1dca4ea17ecbadc5cadf1.asset
+            "9716f2cef49698f439f95bb7a47e05e8", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/acd8738ca64f5a9448dfb040d1f2e4d5.asset
+            "d195993cb22bfbc47af469412be0b7e4", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/b2329c06350f6d24ea49bc2842c81e99.asset
+            "c3b7c039b70d68e4d840fef88c5158c9", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/b5280742086799a4c8c0a14e90cd913d.asset
+            "f7f4ace51225ebd4e94ff3b9367a87ec", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/c69b708d523a01b449b6ca21384d958c.asset
+            "a9572073218728649a677e31cd4ed398", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/c8df303ceb45ae84f85a11591f741734.asset
+            "ca01a457f355c86498fc572d133e7ad2", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/d5d0346a3148a584da4572e44316e658.asset
+            "0d210e13ecd64634d8238b7bc1b34f66", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/db6380e7c98d9e94bb856b1e1b1cf56c.asset
+            "6beefcecc979d6e47b6ee83ea4f319d8", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/e1b45160fe9957145826cfa2a86419a1.asset
+            "b49592c48696d6c40918c057b33fc191", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/SerializedUdonPrograms/f6978e5f7a08f4047b4b9cf219efba6b.asset
+            "529b8786c993d8b409c131ba6cf224de", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources
+            "b5280742086799a4c8c0a14e90cd913d", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/AvatarPedestal Program.asset
+            "0579e2f7d1c57a241a07d45f6088960b", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/ButtonSyncAnyone.asset
+            "3f7757f3a3e464644acd66ab61321b36", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/ButtonSyncBecomeOwner.asset
+            "5893300e3f688004b9251878e312d460", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/ButtonSyncOwner.asset
+            "18a8a73823b22934e929c67357a4e2d7", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/ChangeMaterialOnEvent.asset
+            "0f3632a4c15254e4185e597a9b553015", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/Chooser.asset
+            "2a34c3726f5aaca4c9b05004c07eb5c6", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/CubeArraySync.asset
+            "4bfd9d9a0b7684c449d31b38065b43f4", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/DropdownSync.asset
+            "dfcb9d6121fc4084e97b5303b0054618", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/Empty.asset
+            "98cd88d0adb2e994a9e93d2efefa9eb4", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/FireOnTrigger.asset
+            "aacda992b3a1dca4ea17ecbadc5cadf1", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/FollowPlayer.asset
+            "8732b730b248f4344a2839981e1ff9f0", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/GetPlayersText.asset
+            "0e78d0c5c758aaf4f9d0ace911a2c5d8", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/InputFieldSync.asset
+            "3053cc98f03a13041a10e0650d9b6e24", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/IsValid.asset
+            "1099cbb6e22bfe74a93b71dfe7c428aa", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/ObjectPool.asset
+            "46df060d25eb3bc42be5fcfae616147c", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/PenLine.asset
+            "d5d0346a3148a584da4572e44316e658", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/PickupAndUse.asset
+            "aaaeaa7ebc8e35a4e9ad1275785b2636", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/PlayerCollisionParticles.asset
+            "73571ae951ee35b479181d7ee4a4be25", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/PlayerTrigger.asset
+            "e1b45160fe9957145826cfa2a86419a1", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/Pooled Box.asset
+            "c69b708d523a01b449b6ca21384d958c", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/Projectile.asset
+            "6657daa4973ee1249aae293810e8bccd", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SendEventOnInteract.asset
+            "a7250c474046ad245ac64456f76800ca", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SendEventOnMouseDown.asset
+            "980a7697571ae1540827c8b930f79790", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SendEventOnTimer.asset
+            "f6978e5f7a08f4047b4b9cf219efba6b", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SetActiveFromPlayerTrigger.asset
+            "1f7e9fb643472ef4d83f2ad49fe34b18", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SetAllPlayersMaxAudioDistance.asset
+            "acd8738ca64f5a9448dfb040d1f2e4d5", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SimpleForLoop.asset
+            "2de31a7dfc5718c47aa82772c351b8a3", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SimplePen.asset
+            "8803f6df285e2fd48bbd0aeeb81ed533", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SliderSync.asset
+            "19c6455fcf036f447a988be402108b3c", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SyncPickupColor.asset
+            "4eb7aa2be7d95324ea25c03bf1cab34f", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SyncValueTypes.asset
+            "699261d683532df468f1ed17ff8c8cf1", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SyncValueTypesLinear.asset
+            "1acedb947e4c9dc4d8f749557d611c1e", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/SyncValueTypesSmooth.asset
+            "853a35cf0f51df6498d68490a1f662e3", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/ToggleGameObject.asset
+            "b2329c06350f6d24ea49bc2842c81e99", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/ToggleSync.asset
+            "db6380e7c98d9e94bb856b1e1b1cf56c", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/UdonSyncPlayer.asset
+            "68d999abd6627d04999b5bebe2438687", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/UseStationOnInteract.asset
+            "c8df303ceb45ae84f85a11591f741734", // Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/VRCWorldSettings.asset
+
 
             #endregion
 
@@ -2340,6 +2732,7 @@ namespace VitDeck.Validator
             "1a187ce2a03f5a04b9a173995f1e94e1", // Assets/VketAssets/Assets/VketPrefabs
             "ebc8de035ba5d6c419b38c68f06d18b8", // Assets/VketAssets/Assets/VketPrefabs/LICENSE.txt
             "8ac885989b081be499135bd5e73437ce", // Assets/VketAssets/Assets/VketPrefabs/version.txt
+            "361ca45dc2d1ea24c95c95d79649f8fd", // Assets/VketAssets/Assets/VketPrefabs/VRCChair3.prefab
             "2cef855be269a5041bd6424f34d5d2e6", // Assets/VketAssets/Assets/VketPrefabs/GlobalToggleSwitch
             "436d4106716e99d4e9c21e3dd9d7e530", // Assets/VketAssets/Assets/VketPrefabs/GlobalToggleSwitch/GlobalToggleSwitch.prefab
             "468cbe82543e8904db53bfb4bc9dd486", // Assets/VketAssets/Assets/VketPrefabs/GlobalToggleSwitch/Scripts
