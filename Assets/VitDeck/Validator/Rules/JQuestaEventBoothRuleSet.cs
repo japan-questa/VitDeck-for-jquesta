@@ -104,6 +104,7 @@ namespace VitDeck.Validator
                     { "VRChat/Mobile/Lightmapped", "b1f7ecc80417c414b9d62ce541d5bcbf" },
                     { "VRChat/Mobile/MatCap Lit", "3ad043b7f9839cb48a75a9238d433dec" },
                     { "VRChat/Mobile/Particles/Additive", "9200bec112b65ec4fbbbd33fa89c20f4" },
+                    { "VRChat/Mobile/Particles/Alpha Blended", "8b39b95ac85682040beff730e0cfc77a" },
                     { "VRChat/Mobile/Particles/Multiply", "d5b89f0c74ccf5049ba803c14a090378" },
                     { "VRChat/Mobile/Skybox", "c0d3cb006bb294142bef136f492f2568" },
                     { "VRChat/Mobile/Standard Lite", "0b7113dea2069fc4e8943843eff19f70" },
